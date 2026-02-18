@@ -9,6 +9,8 @@ sonicde_git:        git@github.com:Sonic-DE
 xlibre_git:         https://github.com/X11Libre
 ossqm_git:          git@github.com:oss-qm
 
+kde_git:            https://invent.kde.org/
+
 kf6_git:            https://invent.kde.org/frameworks/
 kf6_version:        v6.24.0
 
@@ -31,6 +33,7 @@ install-prefix: ${@PROJECT::@homedir}/SONICDE
 # what to build (can use packages or provides here)
 # just listing all sonic repos alphabetically here
 build:
+    - sonicde/sonic-l10n-templates
     - sonicde/sonic-sysguard-library
     - sonicde/sonic-screen-library
     - sonicde/silver-theme
@@ -75,6 +78,7 @@ package-defaults:
         - -GNinja
     sonicde_git:    ${sonicde_git}
     xlibre_git:     ${xlibre_git}
+    kde_git:        ${kde_git}
     kf6_git:        ${kf6_git}
     kf6_version:    ${kf6_version}
     kdenet_git:     ${kdenet_git}
