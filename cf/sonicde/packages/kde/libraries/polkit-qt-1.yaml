@@ -1,0 +1,19 @@
+sources:
+    git:
+        url:    ${kdelibs_git}/${@basename}.git
+        ref:    ${ref}
+        depth:  1
+        fetch:
+          - +refs/heads/*:refs/remotes/origin/*
+
+ref: origin/qt6
+
+buildsystem: cmake
+
+depends:
+    - qt6/qtbase
+    - sys/libpolkit-gobject-1
+    - sys/libpolkit-agent-1
+
+cmake-extra-args:
+    - -DFEATURE_developer_build=ON

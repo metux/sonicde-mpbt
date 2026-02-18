@@ -1,0 +1,30 @@
+provides: kde/kwin-dbus-interface
+sources:
+    git:
+        url:    ${sonicde_git}/${@basename}
+        ref:    ${ref}
+        depth:  1
+        fetch:
+          - refs/heads/*:refs/remotes/origin/*
+
+ref: origin/master
+
+buildsystem: cmake
+
+build-depends:
+    - kde/kf6/extra-cmake-modules
+
+depends:
+    - sys/libdrm
+    - qt6/qtbase
+    - qt6/qtsensors
+    - kde/plasma/kdecoration
+    - kde/plasma/knighttime
+    - kde/kf6/kidletime
+    - kde/kf6/ksvg
+    - kde/kf6/kcmutils
+    - sonicde/sonic-globalacceld
+
+cmake-extra-args:
+    - -DBUILD_TESTING=OFF
+    - -DKWIN_BUILD_SCREENLOCKER=OFF

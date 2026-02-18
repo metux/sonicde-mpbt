@@ -1,0 +1,17 @@
+sources:
+    git:
+        url:    ${kf6_git}/${@basename}
+        ref:    ${ref}
+        depth:  1
+        fetch:
+          - refs/tags/${ref}:refs/tags/${ref}
+
+ref: ${kf6_version}
+
+buildsystem: cmake
+
+build-depends:
+    - sys/python3-build
+
+depends:
+    - qt6/qtbase

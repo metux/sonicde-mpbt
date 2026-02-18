@@ -1,0 +1,18 @@
+sources:
+    git:
+        url:    ${kf6_git}/${@basename}
+        ref:    ${ref}
+        depth:  1
+        fetch:
+          - refs/tags/${ref}:refs/tags/${ref}
+
+ref: ${kf6_version}
+
+buildsystem: cmake
+
+build-depends:
+    - kde/kf6/extra-cmake-modules
+    - qt6/qttools
+
+depends:
+    - qt6/qtbase

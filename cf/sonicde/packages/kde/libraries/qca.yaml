@@ -1,0 +1,21 @@
+sources:
+    git:
+        url:    ${kdelibs_git}/${@basename}.git
+        ref:    ${ref}
+        depth:  1
+        fetch:
+          - refs/tags/${ref}:refs/tags/${ref}
+
+ref: v2.3.10
+
+buildsystem: cmake
+
+build-depends:
+    - kde/kf6/extra-cmake-modules
+
+depends:
+    - qt6/qtbase
+    - qt6/qt5compat
+
+cmake-extra-args:
+    - -DBUILD_WITH_QT6=ON

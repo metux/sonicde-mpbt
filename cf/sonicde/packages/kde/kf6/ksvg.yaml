@@ -1,0 +1,21 @@
+sources:
+    git:
+        url:    ${kf6_git}/${@basename}
+        ref:    ${ref}
+        depth:  1
+        fetch:
+          - refs/tags/${ref}:refs/tags/${ref}
+
+ref: ${kf6_version}
+
+buildsystem: cmake
+
+build-depends:
+    - kde/kf6/extra-cmake-modules
+
+depends:
+    - kde/kf6/karchive
+    - kde/kf6/kconfig
+    - kde/kf6/kcolorscheme
+    - kde/kf6/kcoreaddons
+    - kde/kf6/kirigami

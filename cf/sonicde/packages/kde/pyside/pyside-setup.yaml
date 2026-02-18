@@ -1,0 +1,22 @@
+sources:
+    git:
+        upstream-url: https://invent.kde.org/qt/pyside/pyside-setup
+        url:    ${ossqm_git}/pyside-setup.git
+        ref:    ${ref}
+        fetch:
+          - refs/heads/*:refs/remotes/origin/*
+          - refs/tags/*:refs/tags/*
+
+#ref: v6.10.2
+ref: origin/maint/6.10.2
+
+buildsystem: cmake
+
+depends:
+    - qt6/qtbase
+
+cmake-extra-args:
+    - -DCMAKE_PREFIX_PATH=/home/nekrad/SONICDE/lib/cmake
+    - -DDISABLE_PYI=ON
+
+# needs clang-19 installed (devuan)

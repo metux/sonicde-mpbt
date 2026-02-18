@@ -1,0 +1,15 @@
+sources:
+    git:
+        url:    ${kdelibs_git}/${@basename}.git
+        ref:    ${ref}
+        depth:  1
+        fetch:
+          - +refs/heads/*:refs/remotes/origin/*
+
+ref: origin/master
+
+buildsystem: cmake
+
+depends:
+    - qt6/qtbase
+    - sys/libpulse

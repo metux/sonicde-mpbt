@@ -1,0 +1,31 @@
+sources:
+    git:
+        url:    ${kf6_git}/${@basename}
+        ref:    ${ref}
+        depth:  1
+        fetch:
+          - refs/tags/${ref}:refs/tags/${ref}
+
+ref: ${kf6_version}
+
+buildsystem: cmake
+
+build-depends:
+    - kde/kf6/extra-cmake-modules
+
+depends:
+    - qt6/qtbase
+    - kde/kf6/kservice
+    - kde/kf6/solid
+    - kde/kf6/kbookmarks
+    - kde/kf6/kcompletion
+    - kde/kf6/kitemviews
+    - kde/kf6/kjobwidgets
+    - kde/kf6/kcolorscheme
+    - kde/kf6/kiconthemes
+    - kde/kf6/kcrash
+    - kde/kf6/kdbusaddons
+    - sonicde/sonic-frameworks-windowsystem
+
+cmake-extra-args:
+    - -DWITH_WAYLAND=OFF

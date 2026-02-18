@@ -1,0 +1,14 @@
+sources:
+    git:
+        url:    ${sonicde_git}/${@basename}
+        ref:    ${ref}
+        depth:  1
+        fetch:
+          - refs/heads/*:refs/remotes/origin/*
+
+ref: origin/Plasma/6.5
+
+buildsystem: cmake
+
+build-depends:
+    - kde/kf6/extra-cmake-modules

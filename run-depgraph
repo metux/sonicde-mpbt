@@ -1,0 +1,11 @@
+#!/bin/bash
+
+export PATH="$PATH:$HOME/go/bin"
+
+mpbt-builder \
+    -solution cf/sonicde/solutions/devuan.yaml \
+    -workdir _WORK_ \
+    depgraph > depgraph.dot
+
+dot -Tpdf depgraph.dot > depgraph.pdf
+sfdp -Tsvg -Goverlap=prism depgraph.dot -o depgraph.svg

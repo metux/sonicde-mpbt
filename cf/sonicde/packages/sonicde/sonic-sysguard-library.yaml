@@ -1,0 +1,28 @@
+sources:
+    git:
+        url:    ${sonicde_git}/${@basename}
+        ref:    ${ref}
+        depth:  1
+        fetch:
+          - refs/heads/*:refs/remotes/origin/*
+
+ref: origin/master
+
+buildsystem: cmake
+
+build-depends:
+    - kde/kf6/extra-cmake-modules
+    - qt6/qttools
+
+depends:
+    - sys/libdrm
+    - qt6/qtbase
+    - qt6/qtdeclarative
+    - kde/kf6/kcoreaddons
+    - kde/kf6/kconfig
+    - kde/kf6/ki18n
+    - kde/kf6/kservice
+    - kde/kf6/kpackage
+    - kde/kf6/knewstuff
+    - kde/kf6/solid
+    - sonicde/sonic-frameworks-auth

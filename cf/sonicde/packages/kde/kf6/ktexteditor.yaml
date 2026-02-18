@@ -1,0 +1,21 @@
+sources:
+    git:
+        url:    ${kf6_git}/${@basename}
+        ref:    ${ref}
+        depth:  1
+        fetch:
+          - refs/tags/${ref}:refs/tags/${ref}
+
+ref: ${kf6_version}
+
+buildsystem: cmake
+
+build-depends:
+    - kde/kf6/extra-cmake-modules
+
+depends:
+    - qt6/qtbase
+    - qt6/qtspeech
+    - kde/kf6/syntax-highlighting
+    - kde/kf6/sonnet
+    - sonicde/sonic-frameworks-auth

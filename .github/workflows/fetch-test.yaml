@@ -1,0 +1,33 @@
+name: Try fetching
+
+# We're yet just testing the clone process, because actually
+# building everything would exceed gitlab's run time limit
+
+permissions:
+    contents: write
+
+on:
+    push:
+    pull_request:
+
+jobs:
+    fetch-on-ubunutu:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Check out repository code
+              uses: actions/checkout@v4
+
+            - name: install golang toolchain
+              run:  sudo apt install -y golang-go
+
+            - name: install mpbt
+              run:  go install github.com/metux/mpbt/cmd/mpbt-builder@v0.1.5
+
+            - name: run fetching test
+              run: |
+                    ~/go/bin/mpbt-builder \
+                        -root . \
+                        -solution cf/sonicde/solutions/devuan.yaml \
+                        -solution-define sonicde_git=https://github.com/Sonic-DE \
+                        -solution-define ossqm_git=https://github.com/oss-qm \
+                        fetch

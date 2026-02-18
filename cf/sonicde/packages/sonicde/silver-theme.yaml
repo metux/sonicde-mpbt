@@ -1,0 +1,23 @@
+sources:
+    git:
+        url:    ${sonicde_git}/${@basename}
+        ref:    ${ref}
+        depth:  1
+        fetch:
+          - refs/heads/*:refs/remotes/origin/*
+
+ref: origin/master
+
+buildsystem: cmake
+
+build-depends:
+    - kde/kf6/extra-cmake-modules
+
+depends:
+    - qt6/qtbase
+    - kde/kf6/kcoreaddons
+    - kde/kf6/kcmutils
+    - kde/kf6/kiconthemes
+    - kde/kf6/kcolorscheme
+    - kde/kf6/kguiaddons
+    - kde/plasma/kdecoration

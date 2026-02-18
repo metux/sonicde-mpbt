@@ -1,0 +1,21 @@
+sources:
+    git:
+        url:    ${plasma_git}/${@basename}
+        ref:    ${ref}
+        depth:  1
+        fetch:
+          - refs/tags/${ref}:refs/tags/${ref}
+
+ref: ${plasma_version}
+
+buildsystem: cmake
+
+build-depends:
+    - kde/kf6/extra-cmake-modules
+
+depends:
+    - qt6/qtbase
+    - kde/kf6/knewstuff
+    - sys/libnl-3.0
+    - sys/libnl-route-3.0
+    - sys/libsensors

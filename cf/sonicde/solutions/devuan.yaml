@@ -1,0 +1,75 @@
+#
+# Build all SonicDE packages $HOME/SONICDE, along with dependencies
+# that we can't expect from the distro. (including Qt6).
+#
+# Yet just tested on Devuan Excalibur - other distros might require
+# some additional tweaking.
+
+sonicde_git:        git@github.com:Sonic-DE
+xlibre_git:         https://github.com/X11Libre
+ossqm_git:          git@github.com:oss-qm
+
+kf6_git:            https://invent.kde.org/frameworks/
+kf6_version:        v6.24.0
+
+kdelibs_git:        https://invent.kde.org/libraries/
+
+qt6_version:        v6.10.2
+qt6_git:            https://code.qt.io/qt
+
+plasma_version:     v6.6.3
+plasma_git:         https://invent.kde.org/plasma/
+
+install-prefix: ${@PROJECT::@homedir}/SONICDE
+
+# what to build (can use packages or provides here)
+# just listing all sonic repos alphabetically here
+build:
+    - sonicde/sonic-sysguard-library
+    - sonicde/sonic-screen-library
+    - sonicde/silver-theme
+    - sonicde/sonic-audio-applet-pulse
+    - sonicde/sonic-desktop-interface
+    - sonicde/sonic-frameworks-auth
+    - sonicde/sonic-frameworks-core-addons
+    - sonicde/sonic-frameworks-globalaccel
+    - sonicde/sonic-frameworks-io
+    - sonicde/sonic-frameworks-runner
+    - sonicde/sonic-frameworks-windowsystem
+    - sonicde/sonic-globalacceld
+    - sonicde/sonic-interface-libraries
+    - sonicde/sonic-mobile-interface
+    - sonicde/sonic-network-manager
+    - sonicde/sonic-screen
+    - sonicde/sonic-screenlocker
+    - sonicde/sonic-system-info
+    - sonicde/sonic-win
+    - sonicde/sonic-workspace
+    - sonicde/sonic-workspace-addons
+
+# very old ... still Qt5
+#    - sonicde/sonic-sysguard
+
+# extra environment variables
+env:
+    PATH: "${install-prefix}/bin:/bin:/usr/bin"
+    PKG_CONFIG_PATH: ${install-prefix}/share/pkgconfig:${install-prefix}/lib/pkgconfig:${install-prefix}/lib/${@PROJECT::@machine}/pkgconfig/
+    ACLOCAL_PATH: ${install-prefix}/share/aclocal
+
+packages:
+    - ${@PROJECT::@rootdir}/cf/sonicde/packages
+
+# these are injected as default values into each individual package
+package-defaults:
+    cmake-args:
+        - -GNinja
+    sonicde_git:    ${sonicde_git}
+    xlibre_git:     ${xlibre_git}
+    kf6_git:        ${kf6_git}
+    kf6_version:    ${kf6_version}
+    kdelibs_git:    ${kdelibs_git}
+    qt6_git:        ${qt6_git}
+    qt6_version:    ${qt6_version}
+    plasma_git:     ${plasma_git}
+    plasma_version: ${plasma_version}
+    ossqm_git:      ${ossqm_git}

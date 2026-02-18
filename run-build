@@ -1,0 +1,10 @@
+#!/bin/bash
+
+export PATH="$PATH:$HOME/go/bin"
+
+mpbt-builder \
+    -solution cf/sonicde/solutions/devuan.yaml \
+    -workdir _WORK_ \
+    build
+
+rm -Rf _WORK_/install
