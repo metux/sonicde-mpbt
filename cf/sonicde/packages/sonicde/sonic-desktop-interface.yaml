@@ -1,0 +1,18 @@
+sources:
+    git:
+        url:    ${@SOLUTION::sonicde_git}/${@basename}
+        ref:    ${ref}
+        fetch:
+          - refs/heads/*:refs/remotes/origin/*
+          - refs/tags/*:refs/tags/*
+
+ref: origin/master
+
+buildsystem: cmake
+
+depends:
+    - buildtool/extra-cmake-modules
+    - qt/qt6
+
+build-depends:
+    - buildtool/extra-cmake-modules

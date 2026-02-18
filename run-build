@@ -1,0 +1,6 @@
+#!/bin/bash
+
+mpbt-builder \
+    -solution cf/sonicde/solutions/devuan.yaml \
+    -workdir _WORK_ \
+    build

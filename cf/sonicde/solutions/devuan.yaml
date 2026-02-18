@@ -1,0 +1,50 @@
+# needed by several sources
+sonicde_git:    https://github.com/Sonic-DE
+kde_git:        https://invent.kde.org/frameworks/
+
+# default:
+# install-prefix: ${@PROJECT::@workdir}/DESTDIR
+install-prefix: ${@PROJECT::@homedir}/SONICDE
+
+# tell which actual packages for resolving `provides`
+package-mapping:
+    x11/font-util:        system/font-util
+    x11/libxcb-util:      system/libxcb-util
+    x11/libxcb-wm:        system/libxcb-wm
+    x11/libxcvt:          3rdparty/libxcvt
+    x11/libx11:           system/libx11
+    x11/xcb-proto:        3rdparty/xcb-proto
+    x11/xfree86-type1:    system/xfree86-type1
+    x11/xkbcomp:          system/xkbcomp
+    sys/libdrm:           3rdparty/libdrm
+    x11/util-macros:      3rdparty/util-macros
+
+# per package configuration
+package-config:
+    xserver/xlibre-xserver:
+        ref: ${xserver_commit}
+        meson-extra-args:
+            - -Dc_args="-fno-common"
+            - -Dxephyr=true
+            - -Dxnest=true
+            - -Dxvfb=true
+            - -Dxorg=true
+            - -Dglamor=true
+            - -Dxselinux=true
+            - -Dxf86bigfont=true
+            - -Dxcsecurity=true
+            - -Dxfbdev=true
+            - -Ddri2=true
+            - -Ddri3=true
+
+# what to build (can use packages or provides here)
+build:
+    - sonicde/sonic-desktop-interface
+
+# extra environment variables
+env:
+    PKG_CONFIG_PATH: ${install-prefix}/share/pkgconfig:${install-prefix}/lib/pkgconfig:${install-prefix}/lib/${@PROJECT::@machine}/pkgconfig/
+    ACLOCAL_PATH: ${install-prefix}/share/aclocal
+
+packages:
+    - ${@PROJECT::@rootdir}/cf/sonicde/packages

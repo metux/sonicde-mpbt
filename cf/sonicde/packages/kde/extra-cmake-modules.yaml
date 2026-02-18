@@ -1,0 +1,12 @@
+provides: buildtool/extra-cmake-modules
+sources:
+    git:
+        url:    ${@SOLUTION::kde_git}/${@basename}
+        ref:    ${ref}
+        fetch:
+          - refs/heads/*:refs/remotes/origin/*
+          - refs/tags/*:refs/tags/*
+
+ref: origin/master
+
+buildsystem: cmake
