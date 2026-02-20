@@ -11,8 +11,8 @@ ref: origin/master
 buildsystem: cmake
 
 depends:
-    - buildtool/extra-cmake-modules
-    - qt/qt6
+    - qt/qt6-declarative
+    - qt/qt6-svg
 
 build-depends:
     - buildtool/extra-cmake-modules

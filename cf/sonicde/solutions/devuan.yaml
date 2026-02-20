@@ -40,6 +40,7 @@ package-config:
 # what to build (can use packages or provides here)
 build:
     - sonicde/sonic-desktop-interface
+#    - qt/qt6-base
 
 # extra environment variables
 env:

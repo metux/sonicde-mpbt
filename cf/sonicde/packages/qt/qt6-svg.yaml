@@ -1,0 +1,18 @@
+sources:
+    git:
+        url:    https://code.qt.io/qt/qtsvg.git
+        ref:    ${ref}
+        depth:  1
+        fetch:
+          - refs/tags/${ref}:refs/tags/${ref}
+
+ref: v6.10.2
+
+buildsystem: cmake
+
+depends:
+    - qt/qt6-base
+
+cmake-extra-args:
+    - "-G"
+    - Ninja
