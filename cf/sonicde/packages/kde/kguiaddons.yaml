@@ -1,0 +1,21 @@
+sources:
+    git:
+        url:    ${@SOLUTION::kde_git}/${@basename}
+        ref:    ${ref}
+        depth:  1
+        fetch:
+          - refs/heads/*:refs/remotes/origin/*
+          - refs/tags/*:refs/tags/*
+
+ref: v6.23.0
+
+buildsystem: cmake
+
+depends:
+    - build/cmake
+    - qt/qt6-base
+    - qt/pyside-setup
+
+cmake-extra-args:
+    - -DWITH_WAYLAND=OFF
+    - -DWITH_X11=ON

@@ -10,6 +10,9 @@ ref: v6.10.2
 
 buildsystem: cmake
 
+build-depends:
+    - build/cmake
+
 depends:
     - qt/qt6-base
 

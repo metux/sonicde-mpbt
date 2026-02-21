@@ -13,6 +13,8 @@ buildsystem: cmake
 depends:
     - qt/qt6-declarative
     - qt/qt6-svg
+    - qt/qt6-qt5compat
+    - kde/ksvg
 
 build-depends:
     - buildtool/extra-cmake-modules

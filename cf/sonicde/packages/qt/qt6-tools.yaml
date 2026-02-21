@@ -1,10 +1,12 @@
 sources:
     git:
-        url:    git://code.qt.io/qt/qtdeclarative.git
+        url:    https://code.qt.io/qt/qttools.git
         ref:    ${ref}
         depth:  1
         fetch:
           - refs/tags/${ref}:refs/tags/${ref}
+        post-checkout-cmd:
+          - ${@PROJECT::@rootdir}/cf/sonicde/scripts/post-clone-submodules.sh
 
 ref: v6.10.2
 
@@ -15,7 +17,6 @@ build-depends:
 
 depends:
     - qt/qt6-base
-    - qt/qt6-shadertools
 
 cmake-extra-args:
     - "-G"

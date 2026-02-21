@@ -1,6 +1,7 @@
+# FIXME: is this really a Qt package or KDE ?
 sources:
     git:
-        url:    git://code.qt.io/qt/qtdeclarative.git
+        url:    https://invent.kde.org/qt/pyside/pyside-setup
         ref:    ${ref}
         depth:  1
         fetch:
@@ -15,7 +16,6 @@ build-depends:
 
 depends:
     - qt/qt6-base
-    - qt/qt6-shadertools
 
 cmake-extra-args:
     - "-G"

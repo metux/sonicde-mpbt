@@ -1,21 +1,14 @@
 sources:
     git:
-        url:    git://code.qt.io/qt/qtdeclarative.git
+        url:    https://gitlab.kitware.com/cmake/cmake.git
         ref:    ${ref}
         depth:  1
         fetch:
           - refs/tags/${ref}:refs/tags/${ref}
 
-ref: v6.10.2
+ref: v3.28.0
 
 buildsystem: cmake
-
-build-depends:
-    - build/cmake
-
-depends:
-    - qt/qt6-base
-    - qt/qt6-shadertools
 
 cmake-extra-args:
     - "-G"

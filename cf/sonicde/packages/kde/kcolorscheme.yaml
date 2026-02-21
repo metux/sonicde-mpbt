@@ -1,15 +1,17 @@
 sources:
     git:
-        url:    git://code.qt.io/qt/qt5.git
+        url:    ${@SOLUTION::kde_git}/${@basename}
         ref:    ${ref}
+        depth:  1
         fetch:
           - refs/heads/*:refs/remotes/origin/*
           - refs/tags/*:refs/tags/*
-        post-checkout-cmd: ${source-dir}/init-repository
 
-ref: v6.10.2
+ref: v6.23.0
 
 buildsystem: cmake
 
-build-depends:
+depends:
     - build/cmake
+    - qt/qt6-base
+    - kde/kguiaddons

@@ -4,12 +4,25 @@ sources:
         ref:    ${ref}
         depth:  1
         fetch:
-          - refs/tags/${ref}*:refs/tags/${ref}
+          - refs/tags/${ref}:refs/tags/${ref}
 
 ref: v6.10.2
 
 buildsystem: cmake
 
+build-depends:
+    - build/cmake
+
 cmake-extra-args:
-    - "-G"
-    - Ninja
+    - "-GNinja"
+    - "-DFEATURE_xcb=ON"
+    - "-DFEATURE_xkbcommon_x11=ON"
+    - "-DFEATURE_xkbcommon=ON"
+    - "-DFEATURE_gui=ON"
+    - "-DFEATURE_widgets=ON"
+    - "-DFEATURE_icu=OFF"
+    - "-DFEATURE_sql=OFF"
+    - "-DFEATURE_xkbcommon_x11=ON"
+
+#  -DFEATURE_opengl=desktop \       # or es2 if you prefer
+#  -DFEATURE_dbus=ON \              # optional but common
