@@ -23,6 +23,14 @@ cmake-extra-args:
     - "-DFEATURE_icu=OFF"
     - "-DFEATURE_sql=OFF"
     - "-DFEATURE_xkbcommon_x11=ON"
+    - "-DFEATURE_developer_build=ON"
+    - "-DFEATURE_private=ON"
+    - "-DFEATURE_private_tests=OFF"
+    - "-DFEATURE_wayland=OFF"
+    - "-DFEATURE_linuxfb=OFF"
+    - "-DFEATURE_directfb=OFF"
+    - "-DFEATURE_vnc=OFF"
+    - "-DFEATURE_eglfs=OFF"
 
 #  -DFEATURE_opengl=desktop \       # or es2 if you prefer
 #  -DFEATURE_dbus=ON \              # optional but common

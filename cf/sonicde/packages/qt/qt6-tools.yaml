@@ -19,5 +19,5 @@ depends:
     - qt/qt6-base
 
 cmake-extra-args:
-    - "-G"
-    - Ninja
+    - "-GNinja"
+    - "-DFEATURE_developer_build=ON"

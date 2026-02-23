@@ -16,7 +16,8 @@ build-depends:
 depends:
     - qt/qt6-base
     - qt/qt6-shadertools
+    - qt/qt6-svg
 
 cmake-extra-args:
-    - "-G"
-    - Ninja
+    - "-GNinja"
+    - "-DFEATURE_developer_build=ON"

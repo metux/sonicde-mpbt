@@ -1,15 +1,32 @@
 # FIXME: is this really a Qt package or KDE ?
 sources:
     git:
-        url:    https://invent.kde.org/qt/pyside/pyside-setup
+        url:    https://code.qt.io/pyside/pyside-setup.git
         ref:    ${ref}
         depth:  1
         fetch:
           - refs/tags/${ref}:refs/tags/${ref}
 
-ref: v6.10.2
+#ref: v6.10.2
+ref: v6.9.1
 
 buildsystem: cmake
+#buildsystem: exec
+
+#commands:
+#    prepare:
+#    configure:
+#    build:
+#    install:
+#        - python3
+#        - setup.py
+#        - install
+#        - --qtpaths=${@SOLUTION::install-prefix}/bin/qtpaths
+#        - --prefix=${@SOLUTION::install-prefix}
+#        - --build-type=shiboken6
+#        - --verbose
+#        - --disable-pyi
+#    clean:
 
 build-depends:
     - build/cmake
@@ -18,5 +35,12 @@ depends:
     - qt/qt6-base
 
 cmake-extra-args:
-    - "-G"
-    - Ninja
+    - "-GNinja"
+    - -DCMAKE_PREFIX_PATH=/home/nekrad/SONICDE/lib/cmake
+    - -DQt6_DIR=/home/nekrad/SONICDE/lib/cmake/Qt6
+    - -DQt6CorePrivate_DIR=/home/nekrad/SONICDE/lib/cmake/Qt6CorePrivate
+    - -DQt6GuiPrivate_DIR=/home/nekrad/SONICDE/lib/cmake/Qt6GuiPrivate
+    - -DQt6WidgetsPrivate_DIR=/home/nekrad/SONICDE/lib/cmake/Qt6WidgetsPrivate
+    - -DQt6UiToolsPrivate_DIR=/home/nekrad/SONICDE/lib/cmake/Qt6UiToolsPrivate
+    - -DQt6UiToolsPrivate_INCLUDE_TARGETS=ON
+    - -DDISABLE_PYI=ON
