@@ -15,6 +15,10 @@ depends:
     - qt/qt6-svg
     - qt/qt6-qt5compat
     - kde/ksvg
+    - kde/kauth
+    - kde/kcrash
+    - kde/knewstuff
+    - kde/knotifications
 
 build-depends:
     - buildtool/extra-cmake-modules

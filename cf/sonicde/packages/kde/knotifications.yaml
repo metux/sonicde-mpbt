@@ -13,8 +13,4 @@ buildsystem: cmake
 depends:
     - build/cmake
     - kde/extra-cmake-modules
-    - kde/karchive
-    - kde/kconfig
-    - kde/kcolorscheme
-    - kde/kcoreaddons
-    - kde/kirigami
+    - qt/qt6-base

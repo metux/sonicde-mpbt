@@ -12,4 +12,6 @@ ref: v6.23.0
 buildsystem: cmake
 
 build-depends:
+    - build/cmake
     - qt/qt6-tools
+    - kde/extra-cmake-modules

@@ -1,13 +1,15 @@
 sources:
     git:
-        url:    ${@SOLUTION::kde_git}/${@basename}
+#        url:    ${@SOLUTION::kde_git}/${@basename}
+        url:    git@github.com:oss-qm/kguiaddons.git
         ref:    ${ref}
         depth:  1
         fetch:
           - refs/heads/*:refs/remotes/origin/*
           - refs/tags/*:refs/tags/*
 
-ref: v6.23.0
+#ref: v6.23.0
+ref: origin/maint/6.23.0
 
 buildsystem: cmake
 
@@ -15,6 +17,7 @@ depends:
     - build/cmake
     - qt/qt6-base
     - qt/pyside-setup
+    - kde/extra-cmake-modules
 
 cmake-extra-args:
     - -DWITH_WAYLAND=OFF

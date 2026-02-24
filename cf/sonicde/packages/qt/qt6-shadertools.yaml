@@ -17,5 +17,4 @@ depends:
     - qt/qt6-base
 
 cmake-extra-args:
-    - "-G"
-    - Ninja
+    - -GNinja

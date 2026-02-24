@@ -13,8 +13,6 @@ buildsystem: cmake
 depends:
     - build/cmake
     - kde/extra-cmake-modules
-    - kde/karchive
-    - kde/kconfig
-    - kde/kcolorscheme
-    - kde/kcoreaddons
-    - kde/kirigami
+
+cmake-extra-args:
+    - "-GNinja"

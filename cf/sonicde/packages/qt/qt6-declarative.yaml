@@ -19,5 +19,5 @@ depends:
     - qt/qt6-svg
 
 cmake-extra-args:
-    - "-GNinja"
-    - "-DFEATURE_developer_build=ON"
+    - -GNinja
+    - -DFEATURE_developer_build=ON
