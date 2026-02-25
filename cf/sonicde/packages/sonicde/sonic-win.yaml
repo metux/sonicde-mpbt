@@ -1,3 +1,4 @@
+provides: kde/kwin-dbus-interface
 sources:
     git:
         url:    ${@SOLUTION::sonicde_git}/${@basename}
@@ -10,8 +11,10 @@ ref: origin/master
 
 buildsystem: cmake
 
-depends:
-    - buildtool/extra-cmake-modules
-
 build-depends:
     - buildtool/extra-cmake-modules
+
+depends:
+    - qt/qt6-base
+    - kde/plasma/kdecoration
+    - kde/kf6/kglobalaccel

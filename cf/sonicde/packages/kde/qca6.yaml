@@ -1,12 +1,12 @@
 sources:
     git:
-        url:    ${@SOLUTION::kf6_git}/${@basename}
+        url:    https://github.com/KDE/qca
         ref:    ${ref}
         depth:  1
         fetch:
           - refs/tags/${ref}:refs/tags/${ref}
 
-ref: ${@SOLUTION::kf6_version}
+ref: v2.3.10
 
 buildsystem: cmake
 
@@ -16,5 +16,5 @@ depends:
     - qt/qt6-base
 
 cmake-extra-args:
-    - "-GNinja"
-    - "-DWITH_WAYLAND=OFF"
+    - -GNinja
+    - -DBUILD_WITH_QT6=ON

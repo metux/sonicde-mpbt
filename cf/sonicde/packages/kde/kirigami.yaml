@@ -1,12 +1,12 @@
 sources:
     git:
-        url:    ${@SOLUTION::kde_git}/${@basename}
+        url:    ${@SOLUTION::kf6_git}/${@basename}
         ref:    ${ref}
         depth:  1
         fetch:
           - refs/tags/${ref}:refs/tags/${ref}
 
-ref: ${@SOLUTION::kde_version}
+ref: ${@SOLUTION::kf6_version}
 
 buildsystem: cmake
 

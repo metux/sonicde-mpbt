@@ -1,6 +1,6 @@
 sources:
     git:
-#        url:    ${@SOLUTION::kde_git}/${@basename}
+#        url:    ${@SOLUTION::kf6_git}/${@basename}
         url:    git@github.com:oss-qm/kguiaddons.git
         ref:    ${ref}
         depth:  1

@@ -1,20 +1,15 @@
 sources:
     git:
-        url:    ${@SOLUTION::kf6_git}/${@basename}
+        url:    ${@SOLUTION::plasma_git}/${@basename}.git
         ref:    ${ref}
         depth:  1
         fetch:
           - refs/tags/${ref}:refs/tags/${ref}
 
-ref: ${@SOLUTION::kf6_version}
+ref: ${@SOLUTION::plasma_version}
 
 buildsystem: cmake
 
 depends:
     - build/cmake
-    - kde/extra-cmake-modules
     - qt/qt6-base
-
-cmake-extra-args:
-    - "-GNinja"
-    - "-DWITH_WAYLAND=OFF"

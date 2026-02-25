@@ -6,7 +6,7 @@ sources:
         fetch:
           - refs/tags/${ref}:refs/tags/${ref}
 
-ref: v6.6.1
+ref: ${@SOLUTION::plasma_version}
 
 buildsystem: cmake
 

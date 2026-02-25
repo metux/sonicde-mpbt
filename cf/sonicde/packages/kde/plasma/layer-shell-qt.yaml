@@ -1,6 +1,6 @@
 sources:
     git:
-        url:    https://invent.kde.org/plasma/${@basename}.git
+        url:    ${@SOLUTION::plasma_git}/${@basename}.git
         ref:    ${ref}
         depth:  1
         fetch:
@@ -27,5 +27,3 @@ depends:
     - kde/kstatusnotifieritem
     - kde/libkscreen
     - kde/libksysguard
-    - kde/plasma/layer-shell-qt
-    - kde/kwin-dbus-interface

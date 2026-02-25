@@ -14,7 +14,7 @@ depends:
     - build/cmake
     - kde/extra-cmake-modules
     - qt/qt6-base
+    - kde/qca6
 
 cmake-extra-args:
-    - "-GNinja"
-    - "-DWITH_WAYLAND=OFF"
+    - -DWITH_QCA=OFF
