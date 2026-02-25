@@ -1,6 +1,6 @@
 sources:
     git:
-        url:    https://code.qt.io/qt/qtshadertools.git
+        url:    https://code.qt.io/qt/qtwebsockets.git
         ref:    ${ref}
         depth:  1
         fetch:
@@ -18,3 +18,6 @@ depends:
 
 cmake-extra-args:
     - -GNinja
+    - -DFEATURE_developer_build=ON
+    - -DFEATURE_private=ON
+    - -DFEATURE_private_tests=OFF

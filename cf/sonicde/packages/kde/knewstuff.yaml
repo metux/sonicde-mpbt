@@ -6,7 +6,7 @@ sources:
         fetch:
           - refs/tags/${ref}:refs/tags/${ref}
 
-ref: v6.23.0
+ref: ${@SOLUTION::kde_version}
 
 buildsystem: cmake
 

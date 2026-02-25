@@ -1,20 +1,18 @@
 sources:
     git:
-        url:    https://code.qt.io/qt/qtshadertools.git
+        url:    https://invent.kde.org/plasma/${@basename}.git
         ref:    ${ref}
         depth:  1
         fetch:
           - refs/tags/${ref}:refs/tags/${ref}
 
-ref: ${@SOLUTION::qt6_version}
+ref: v6.6.1
 
 buildsystem: cmake
 
-build-depends:
-    - build/cmake
-
 depends:
+    - build/cmake
+    - kde/extra-cmake-modules
     - qt/qt6-base
-
-cmake-extra-args:
-    - -GNinja
+    - qt/qt6-location
+    - kde/qcoro6

@@ -6,7 +6,7 @@ sources:
         fetch:
           - refs/tags/${ref}:refs/tags/${ref}
 
-ref: v6.10.2
+ref: ${@SOLUTION::qt6_version}
 
 buildsystem: cmake
 
@@ -21,3 +21,4 @@ depends:
 cmake-extra-args:
     - -GNinja
     - -DFEATURE_developer_build=ON
+    - -DFEATURE_private=ON

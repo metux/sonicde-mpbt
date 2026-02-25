@@ -13,8 +13,14 @@ buildsystem: cmake
 depends:
     - build/cmake
     - kde/extra-cmake-modules
-    - kde/karchive
-    - kde/kconfig
-    - kde/kcolorscheme
-    - kde/kcoreaddons
-    - kde/kirigami
+    - qt/qt6-base
+    - kde/kservice
+    - kde/solid
+    - kde/kbookmarks
+    - kde/kcompletion
+    - kde/kitemviews
+    - kde/kjobwidgets
+
+cmake-extra-args:
+    - -DWITH_WAYLAND=OFF
+    - -GNinja

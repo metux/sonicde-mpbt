@@ -4,7 +4,8 @@ sources:
         ref:    ${ref}
         depth:  1
         fetch:
-          - refs/tags/${ref}:refs/tags/${ref}
+          - refs/heads/*:refs/remotes/origin/*
+          - refs/tags/*:refs/tags/*
 
 ref: ${@SOLUTION::kde_version}
 
@@ -12,9 +13,15 @@ buildsystem: cmake
 
 depends:
     - build/cmake
+    - qt/qt6-base
     - kde/extra-cmake-modules
-    - kde/karchive
     - kde/kconfig
-    - kde/kcolorscheme
-    - kde/kcoreaddons
-    - kde/kirigami
+    - kde/breeze-icons
+
+cmake-args:
+    - -GNinja
+
+cmake-extra-args:
+    - -DKWINDOWSYSTEM_WAYLAND=OFF
+    - -DBUILD_TESTING=OFF
+    - -GNinja

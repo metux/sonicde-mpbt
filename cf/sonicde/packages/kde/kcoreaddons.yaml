@@ -7,7 +7,7 @@ sources:
           - refs/heads/*:refs/remotes/origin/*
           - refs/tags/*:refs/tags/*
 
-ref: v6.23.0
+ref: ${@SOLUTION::kde_version}
 
 buildsystem: cmake
 

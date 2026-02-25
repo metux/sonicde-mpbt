@@ -1,20 +1,19 @@
 sources:
     git:
-        url:    ${@SOLUTION::kde_git}/${@basename}
+        url:    https://invent.kde.org/plasma/plasma5support.git
         ref:    ${ref}
         depth:  1
         fetch:
           - refs/tags/${ref}:refs/tags/${ref}
 
-ref: ${@SOLUTION::kde_version}
+ref: v6.6.1
 
 buildsystem: cmake
 
 depends:
     - build/cmake
     - kde/extra-cmake-modules
-    - kde/karchive
-    - kde/kconfig
-    - kde/kcolorscheme
-    - kde/kcoreaddons
-    - kde/kirigami
+    - qt/qt6-base
+    - kde/kidletime
+    - kde/kunitconversion
+    - kde/kholidays

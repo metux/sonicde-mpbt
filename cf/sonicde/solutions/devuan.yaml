@@ -1,6 +1,8 @@
 # needed by several sources
 sonicde_git:    https://github.com/Sonic-DE
 kde_git:        https://invent.kde.org/frameworks/
+kde_version:    v6.23.0
+qt6_version:    v6.10.2
 
 # default:
 # install-prefix: ${@PROJECT::@workdir}/DESTDIR

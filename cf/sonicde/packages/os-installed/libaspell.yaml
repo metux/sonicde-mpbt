@@ -1,0 +1,7 @@
+provides: platform/libaspell
+type: system
+pkg-config: libapell
+
+platform-packages:
+    debian: libaspell-dev
+    devuan: libaspell-dev

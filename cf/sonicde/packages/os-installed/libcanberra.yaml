@@ -1,0 +1,7 @@
+provides: platform/libcanberra
+type: system
+pkg-config: libcanberra
+
+platform-packages:
+    debian: libcanberra-dev
+    devuan: libcanberra-dev

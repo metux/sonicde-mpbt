@@ -1,20 +1,16 @@
 sources:
     git:
-        url:    https://code.qt.io/qt/qtshadertools.git
+        url:    https://github.com/danvratil/qcoro.git
         ref:    ${ref}
         depth:  1
         fetch:
           - refs/tags/${ref}:refs/tags/${ref}
 
-ref: ${@SOLUTION::qt6_version}
+ref:  v0.10.0
 
 buildsystem: cmake
 
-build-depends:
-    - build/cmake
-
 depends:
+    - build/cmake
     - qt/qt6-base
-
-cmake-extra-args:
-    - -GNinja
+    - qt/qt6-websockets

@@ -8,7 +8,7 @@ sources:
         post-checkout-cmd:
           - ${@PROJECT::@rootdir}/cf/sonicde/scripts/post-clone-submodules.sh
 
-ref: v6.10.2
+ref: ${@SOLUTION::qt6_version}
 
 buildsystem: cmake
 

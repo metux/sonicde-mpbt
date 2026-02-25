@@ -6,11 +6,12 @@ sources:
         fetch:
           - refs/tags/${ref}:refs/tags/${ref}
 
-ref: v6.23.0
+ref: ${@SOLUTION::kde_version}
 
 buildsystem: cmake
 
 depends:
+    - platform/libcanberra
     - build/cmake
     - kde/extra-cmake-modules
     - qt/qt6-base

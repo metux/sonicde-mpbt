@@ -1,20 +1,16 @@
 sources:
     git:
-        url:    https://code.qt.io/qt/qtshadertools.git
+        url:    ${@SOLUTION::kde_git}/${@basename}
         ref:    ${ref}
         depth:  1
         fetch:
           - refs/tags/${ref}:refs/tags/${ref}
 
-ref: ${@SOLUTION::qt6_version}
+ref: ${@SOLUTION::kde_version}
 
 buildsystem: cmake
 
-build-depends:
-    - build/cmake
-
 depends:
+    - build/cmake
     - qt/qt6-base
-
-cmake-extra-args:
-    - -GNinja
+    - kde/extra-cmake-modules

@@ -19,6 +19,21 @@ depends:
     - kde/kcrash
     - kde/knewstuff
     - kde/knotifications
+    - kde/kcodecs
+    - kde/kdbusaddons
+    - kde/sonnet
+    - kde/kglobalaccel
+    - kde/kiconthemes
+    - kde/krunner
+    - kde/kio
+    - kde/kxmlgui
+    - kde/kcmutils
+    - kde/knotifyconfig
+    - kde/plasma5support
+    - kde/plasma-framework
+    - kde/plasma-activities-stats
+#    - kde/plasma-desktop
+    - kde/plasma-workspace
 
 build-depends:
     - buildtool/extra-cmake-modules
