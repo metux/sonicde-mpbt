@@ -13,6 +13,8 @@ buildsystem: cmake
 depends:
     - build/cmake
     - kde/extra-cmake-modules
+    - kde/kdeclarative
     - qt/qt6-base
     - qt/qt6-location
     - kde/qcoro6
+    - kde/kded

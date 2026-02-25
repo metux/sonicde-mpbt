@@ -1,19 +1,16 @@
 sources:
     git:
-        url:    https://github.com/danvratil/qcoro.git
+        url:    ${@SOLUTION::kde_git}/${@basename}
         ref:    ${ref}
         depth:  1
         fetch:
           - refs/tags/${ref}:refs/tags/${ref}
 
-ref:  v0.13.0
+ref: ${@SOLUTION::kde_version}
 
 buildsystem: cmake
 
 depends:
     - build/cmake
+    - kde/extra-cmake-modules
     - qt/qt6-base
-    - qt6/qtwebsockets
-
-cmake-extra-args:
-    - -GNinja

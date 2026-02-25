@@ -1,19 +1,21 @@
 sources:
     git:
-        url:    https://github.com/danvratil/qcoro.git
+        url:    https://code.qt.io/qt/${@basename}.git
         ref:    ${ref}
         depth:  1
         fetch:
           - refs/tags/${ref}:refs/tags/${ref}
 
-ref:  v0.13.0
+ref: ${@SOLUTION::qt6_version}
 
 buildsystem: cmake
 
-depends:
+build-depends:
     - build/cmake
+
+depends:
     - qt/qt6-base
-    - qt6/qtwebsockets
 
 cmake-extra-args:
     - -GNinja
+    - -DFEATURE_developer_build=ON

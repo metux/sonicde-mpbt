@@ -22,3 +22,6 @@ cmake-extra-args:
     - -GNinja
     - -DFEATURE_developer_build=ON
     - -DFEATURE_private=ON
+    - -DFEATURE_private_headers=ON
+    - -DQT_FEATURE_developer_build=ON
+    - -DQT_FEATURE_private_modules=ON
