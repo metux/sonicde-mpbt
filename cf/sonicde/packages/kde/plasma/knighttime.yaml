@@ -1,0 +1,29 @@
+sources:
+    git:
+        url:    ${@SOLUTION::plasma_git}/${@basename}.git
+        ref:    ${ref}
+        depth:  1
+        fetch:
+          - refs/tags/${ref}:refs/tags/${ref}
+
+ref: ${@SOLUTION::plasma_version}
+
+buildsystem: cmake
+
+depends:
+    - build/cmake
+    - kde/extra-cmake-modules
+    - kde/kdeclarative
+    - qt/qt6-base
+    - qt/qt6-location
+    - kde/qcoro6
+    - kde/kded
+    - kde/kparts
+    - kde/ktexteditor
+    - qt6/qtspeech
+    - kde/prison
+    - kde/kwallet
+    - kde/ktextwidgets
+    - kde/kstatusnotifieritem
+    - kde/libkscreen
+    - kde/libksysguard

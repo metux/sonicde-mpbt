@@ -15,6 +15,12 @@ build-depends:
     - buildtool/extra-cmake-modules
 
 depends:
+    - sys/libdrm
     - qt/qt6-base
     - kde/plasma/kdecoration
-    - kde/kf6/kglobalaccel
+    - kde/plasma/kglobalacceld
+    - kde/plasma/knighttime
+
+cmake-extra-args:
+    - -DBUILD_TESTING=OFF
+    - -DKWIN_BUILD_SCREENLOCKER=OFF
