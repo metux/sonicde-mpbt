@@ -7,7 +7,7 @@ sources:
           - refs/heads/*:refs/remotes/origin/*
           - refs/tags/*:refs/tags/*
 
-ref: origin/master
+ref: origin/Plasma/6.6
 
 buildsystem: cmake
 
@@ -17,6 +17,7 @@ build-depends:
 depends:
     - sys/libdrm
     - qt/qt6-base
+    - qt6/qtsensors
     - kde/plasma/kdecoration
     - kde/plasma/kglobalacceld
     - kde/plasma/knighttime

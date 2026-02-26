@@ -1,6 +1,6 @@
 sources:
     git:
-        url:    git://code.qt.io/qt/qtdeclarative.git
+        url:    https://code.qt.io/qt/${@basename}.git
         ref:    ${ref}
         depth:  1
         fetch:
@@ -15,12 +15,7 @@ build-depends:
 
 depends:
     - qt/qt6-base
-    - qt/qt6-shadertools
-    - qt6/qt6svg
 
 cmake-extra-args:
+    - -GNinja
     - -DFEATURE_developer_build=ON
-    - -DFEATURE_private=ON
-    - -DFEATURE_private_headers=ON
-    - -DQT_FEATURE_developer_build=ON
-    - -DQT_FEATURE_private_modules=ON

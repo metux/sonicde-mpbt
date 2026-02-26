@@ -1,6 +1,6 @@
 sources:
     git:
-        url:    https://code.qt.io/qt/qtsvg.git
+        url:    ${@SOLUTION::qt6_git}/${@basename}.git
         ref:    ${ref}
         depth:  1
         fetch:
@@ -17,7 +17,4 @@ depends:
     - qt/qt6-base
 
 cmake-extra-args:
-    - -GNinja
     - -DFEATURE_developer_build=ON
-    - -DFEATURE_private=ON
-    - -DFEATURE_private_tests=OFF

@@ -6,14 +6,14 @@ sources:
           - refs/heads/*:refs/remotes/origin/*
           - refs/tags/*:refs/tags/*
 
-ref: origin/master
+ref: origin/Plasma/6.6
 
 buildsystem: cmake
 
 depends:
     - qt/qt6-declarative
-    - qt/qt6-svg
     - qt/qt6-qt5compat
+    - qt6/qtsvg
     - kde/ksvg
     - kde/kauth
     - kde/kcrash
