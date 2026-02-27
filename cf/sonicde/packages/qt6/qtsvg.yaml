@@ -18,5 +18,4 @@ depends:
     - qt6/qtmultimedia
 
 cmake-extra-args:
-    - -GNinja
     - -DFEATURE_developer_build=ON
