@@ -16,7 +16,7 @@ build-depends:
 depends:
     - qt/qt6-base
     - qt/qt6-shadertools
-    - qt6/qt6svg
+    - qt6/qtsvg
 
 cmake-extra-args:
     - -DFEATURE_developer_build=ON

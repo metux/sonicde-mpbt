@@ -6,13 +6,13 @@ sources:
         fetch:
           - refs/tags/${ref}:refs/tags/${ref}
 
-ref: ${SOLUTION::kf6_version}
+ref: ${@SOLUTION::kf6_version}
 
 buildsystem: cmake
 
-depends:
+build-depends:
     - build/cmake
     - kde/extra-cmake-modules
+
+depends:
     - qt/qt6-base
-    - kde/kpackage
-    - kde/kwidgetsaddons

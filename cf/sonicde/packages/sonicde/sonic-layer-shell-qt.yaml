@@ -1,3 +1,4 @@
+provides: kde/plasma/layer-shell-qt
 sources:
     git:
         url:    ${@SOLUTION::sonicde_git}/${@basename}
@@ -10,11 +11,17 @@ ref: origin/Plasma/6.6
 
 buildsystem: cmake
 
-#depends:
-#    - kde/plasma/kscreenlocker
-
-depends:
-    - kde/libraries/polkit-qt-1
-
 build-depends:
     - buildtool/extra-cmake-modules
+
+depends:
+    - sys/libdrm
+    - qt/qt6-base
+    - qt6/qtsensors
+    - kde/plasma/kdecoration
+    - kde/plasma/kglobalacceld
+    - kde/plasma/knighttime
+
+cmake-extra-args:
+    - -DBUILD_TESTING=OFF
+    - -DKWIN_BUILD_SCREENLOCKER=OFF

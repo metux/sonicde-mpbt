@@ -24,7 +24,7 @@ depends:
     - kde/sonnet
     - kde/kglobalaccel
     - kde/kiconthemes
-    - kde/krunner
+    - sonicde/sonic-krunner # forked from kde/kf6/krunner
     - kde/kio
     - kde/kxmlgui
     - kde/kcmutils
@@ -32,8 +32,13 @@ depends:
     - kde/plasma5support
     - kde/plasma-framework
     - kde/plasma-activities-stats
-#    - kde/plasma-desktop
-    - kde/plasma-workspace
+    - sonicde/sonic-workspace
+#    - kde/plasma/kscreenlocker
+    - sonicde/sonic-win
 
 build-depends:
     - buildtool/extra-cmake-modules
+
+cmake-extra-args:
+    - -DBUILD_KCM_TABLET=OFF
+    - -DBUILD_DOC=OFF

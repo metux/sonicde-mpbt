@@ -1,0 +1,22 @@
+sources:
+    git:
+        url:    https://invent.kde.org/libraries/${@basename}.git
+        ref:    ${ref}
+        depth:  1
+        fetch:
+          - +refs/tags/*:refs/tags/*
+          - +refs/heads/*:refs/remotes/origin/*
+
+# ref: ${@SOLUTION::qt6_version}
+ref: origin/qt6
+
+buildsystem: cmake
+
+build-depends:
+    - build/cmake
+
+depends:
+    - qt/qt6-base
+
+cmake-extra-args:
+    - -DFEATURE_developer_build=ON

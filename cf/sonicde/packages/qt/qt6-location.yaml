@@ -15,7 +15,7 @@ build-depends:
 
 depends:
     - qt/qt6-base
-    - qt/qt6-positioning
+    - qt6/qtpositioning
 
 cmake-extra-args:
     - -GNinja

@@ -1,12 +1,12 @@
 sources:
     git:
-        url:    ${@SOLUTION::kf6_git}/${@basename}
+        url:    ${@SOLUTION::plasma_git}/${@basename}
         ref:    ${ref}
         depth:  1
         fetch:
           - refs/tags/${ref}:refs/tags/${ref}
 
-ref: ${@SOLUTION::kf6_version}
+ref: ${@SOLUTION::plasma_version}
 
 buildsystem: cmake
 
@@ -16,6 +16,3 @@ build-depends:
 
 depends:
     - qt/qt6-base
-    - kde/kpackage
-    - kde/kwidgetsaddons
-    - kde/kf6/attica
