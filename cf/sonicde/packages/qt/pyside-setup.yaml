@@ -20,7 +20,6 @@ depends:
     - qt/qt6-base
 
 cmake-extra-args:
-    - "-GNinja"
 #    - -DCMAKE_PREFIX_PATH=/home/nekrad/SONICDE/lib/cmake
 #    - -DQt6_DIR=/home/nekrad/SONICDE/lib/cmake/Qt6
 #    - -DQt6CorePrivate_DIR=/home/nekrad/SONICDE/lib/cmake/Qt6CorePrivate

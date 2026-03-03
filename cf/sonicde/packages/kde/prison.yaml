@@ -16,5 +16,4 @@ depends:
     - qt/qt6-base
 
 cmake-extra-args:
-    - -GNinja
     - -DWITH_QRENCODE=OFF

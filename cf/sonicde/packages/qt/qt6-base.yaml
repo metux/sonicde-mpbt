@@ -14,7 +14,6 @@ build-depends:
     - build/cmake
 
 cmake-extra-args:
-    - -GNinja
     - -DFEATURE_xcb=ON
     - -DFEATURE_xkbcommon_x11=ON
     - -DFEATURE_xkbcommon=ON

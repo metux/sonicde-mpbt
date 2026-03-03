@@ -12,5 +12,5 @@ buildsystem: cmake
 
 build-depends:
     - build/cmake
-    - qt/qt6-tools
+    - qt6/qttools
     - kde/extra-cmake-modules

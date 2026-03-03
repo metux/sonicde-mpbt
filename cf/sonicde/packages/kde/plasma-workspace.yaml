@@ -15,7 +15,7 @@ depends:
     - kde/extra-cmake-modules
     - kde/kdeclarative
     - qt/qt6-base
-    - qt/qt6-location
+    - qt6/qtlocation
     - kde/qcoro6
     - kde/kded
     - kde/kparts

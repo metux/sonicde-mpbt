@@ -17,10 +17,6 @@ depends:
     - kde/kconfig
     - kde/breeze-icons
 
-cmake-args:
-    - -GNinja
-
 cmake-extra-args:
     - -DKWINDOWSYSTEM_WAYLAND=OFF
     - -DBUILD_TESTING=OFF
-    - -GNinja

@@ -16,5 +16,4 @@ depends:
     - qt/qt6-base
 
 cmake-extra-args:
-    - -GNinja
     - -DBUILD_WITH_QT6=ON

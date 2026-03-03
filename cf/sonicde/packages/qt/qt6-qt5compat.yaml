@@ -15,6 +15,3 @@ build-depends:
 
 depends:
     - qt/qt6-base
-
-cmake-extra-args:
-    - -GNinja

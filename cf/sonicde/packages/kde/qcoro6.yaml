@@ -14,6 +14,3 @@ depends:
     - build/cmake
     - qt/qt6-base
     - qt6/qtwebsockets
-
-cmake-extra-args:
-    - -GNinja

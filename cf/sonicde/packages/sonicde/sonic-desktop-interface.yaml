@@ -11,7 +11,7 @@ ref: origin/mtx/hack/Plasma/6.6
 buildsystem: cmake
 
 depends:
-    - qt/qt6-declarative
+    - qt6/qtdeclarative
     - qt/qt6-qt5compat
     - qt6/qtsvg
     - kde/ksvg

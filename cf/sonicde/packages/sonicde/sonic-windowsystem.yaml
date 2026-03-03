@@ -10,8 +10,5 @@ ref: origin/Plasma/6.6
 
 buildsystem: cmake
 
-depends:
-    - buildtool/extra-cmake-modules
-
 build-depends:
     - buildtool/extra-cmake-modules

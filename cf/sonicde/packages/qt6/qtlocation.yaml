@@ -1,12 +1,10 @@
 sources:
     git:
-        url:    https://code.qt.io/qt/qttools.git
+        url:    https://code.qt.io/qt/${@basename}.git
         ref:    ${ref}
         depth:  1
         fetch:
           - refs/tags/${ref}:refs/tags/${ref}
-        post-checkout-cmd:
-          - ${@PROJECT::@rootdir}/cf/sonicde/scripts/post-clone-submodules.sh
 
 ref: ${@SOLUTION::qt6_version}
 
@@ -17,8 +15,10 @@ build-depends:
 
 depends:
     - qt/qt6-base
+    - qt6/qtpositioning
 
 cmake-extra-args:
-    - -GNinja
     - -DFEATURE_developer_build=ON
-#    - -DFEATURE_linguisttools=ON
+    - -DFEATURE_private=ON
+    - -DFEATURE_private_tests=OFF
+    - -DFEATURE_positioning_quick=ON

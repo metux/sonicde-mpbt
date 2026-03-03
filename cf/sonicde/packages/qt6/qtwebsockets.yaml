@@ -17,7 +17,6 @@ depends:
     - qt/qt6-base
 
 cmake-extra-args:
-    - -GNinja
     - -DFEATURE_developer_build=ON
     - -DFEATURE_private=ON
     - -DFEATURE_private_tests=OFF
