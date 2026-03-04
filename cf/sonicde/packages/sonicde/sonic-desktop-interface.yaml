@@ -12,7 +12,7 @@ buildsystem: cmake
 
 depends:
     - qt6/qtdeclarative
-    - qt/qt6-qt5compat
+    - qt6/qt5compat
     - qt6/qtsvg
     - kde/ksvg
     - kde/kauth

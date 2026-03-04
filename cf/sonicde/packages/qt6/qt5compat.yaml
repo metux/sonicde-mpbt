@@ -1,6 +1,6 @@
 sources:
     git:
-        url:    https://code.qt.io/qt/qt5compat.git
+        url:    https://code.qt.io/qt/${@basename}.git
         ref:    ${ref}
         depth:  1
         fetch:
