@@ -10,17 +10,19 @@ ref: ${@SOLUTION::plasma_version}
 
 buildsystem: cmake
 
-depends:
+build-depends:
     - build/cmake
     - kde/extra-cmake-modules
-    - kde/kdeclarative
-    - qt/qt6-base
+
+depends:
+    - qt6/qtbase
     - qt6/qtlocation
+    - qt6/qtspeech
+    - kde/kdeclarative
     - kde/qcoro6
     - kde/kded
     - kde/kparts
     - kde/ktexteditor
-    - qt6/qtspeech
     - kde/prison
     - kde/kwallet
     - kde/ktextwidgets

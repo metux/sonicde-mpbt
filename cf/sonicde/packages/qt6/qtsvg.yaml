@@ -14,7 +14,7 @@ build-depends:
     - build/cmake
 
 depends:
-    - qt/qt6-base
+    - qt6/qtbase
     - qt6/qtmultimedia
 
 cmake-extra-args:

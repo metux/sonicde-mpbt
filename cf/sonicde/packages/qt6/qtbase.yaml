@@ -1,6 +1,6 @@
 sources:
     git:
-        url:    https://code.qt.io/qt/qtbase.git
+        url:    https://code.qt.io/qt/${@basename}.git
         ref:    ${ref}
         depth:  1
         fetch:
@@ -23,9 +23,9 @@ cmake-extra-args:
     - -DFEATURE_sql=ON
     - -DFEATURE_xkbcommon_x11=ON
     - -DFEATURE_developer_build=ON
-    - -DFEATURE_private=ON
+#    - -DFEATURE_private=ON
     - -DFEATURE_private_tests=OFF
-    - -DFEATURE_private_headers=ON
+#    - -DFEATURE_private_headers=ON
     - -DFEATURE_wayland=OFF
     - -DFEATURE_linuxfb=OFF
     - -DFEATURE_directfb=OFF

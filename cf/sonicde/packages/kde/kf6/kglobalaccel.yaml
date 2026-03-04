@@ -15,7 +15,7 @@ build-depends:
     - kde/extra-cmake-modules
 
 depends:
-    - qt/qt6-base
+    - qt6/qtbase
 
 cmake-extra-args:
     - -DBUILD_KGLOBALACCELD=ON

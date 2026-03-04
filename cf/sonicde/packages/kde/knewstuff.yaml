@@ -15,7 +15,7 @@ build-depends:
     - kde/extra-cmake-modules
 
 depends:
-    - qt/qt6-base
+    - qt6/qtbase
     - kde/kpackage
     - kde/kwidgetsaddons
     - kde/kf6/attica

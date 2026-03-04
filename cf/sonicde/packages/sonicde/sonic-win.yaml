@@ -12,11 +12,11 @@ ref: origin/Plasma/6.6
 buildsystem: cmake
 
 build-depends:
-    - buildtool/extra-cmake-modules
+    - kde/extra-cmake-modules
 
 depends:
     - sys/libdrm
-    - qt/qt6-base
+    - qt6/qtbase
     - qt6/qtsensors
     - kde/plasma/kdecoration
     - kde/plasma/kglobalacceld

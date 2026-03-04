@@ -10,8 +10,10 @@ ref: ${@SOLUTION::kf6_version}
 
 buildsystem: cmake
 
-depends:
-    - platform/libcanberra
+build-depends:
     - build/cmake
     - kde/extra-cmake-modules
-    - qt/qt6-base
+
+depends:
+    - platform/libcanberra
+    - qt6/qtbase

@@ -10,10 +10,12 @@ ref: v2.3.10
 
 buildsystem: cmake
 
-depends:
+build-depends:
     - build/cmake
     - kde/extra-cmake-modules
-    - qt/qt6-base
+
+depends:
+    - qt6/qtbase
 
 cmake-extra-args:
     - -DBUILD_WITH_QT6=ON

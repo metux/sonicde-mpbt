@@ -13,4 +13,6 @@ buildsystem: cmake
 
 build-depends:
     - build/cmake
-    - qt/qt6-base
+
+depends:
+    - qt6/qtbase

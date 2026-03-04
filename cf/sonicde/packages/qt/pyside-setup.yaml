@@ -17,7 +17,7 @@ build-depends:
     - build/cmake
 
 depends:
-    - qt/qt6-base
+    - qt6/qtbase
 
 cmake-extra-args:
 #    - -DCMAKE_PREFIX_PATH=/home/nekrad/SONICDE/lib/cmake

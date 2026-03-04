@@ -16,7 +16,7 @@ build-depends:
     - build/cmake
 
 depends:
-    - qt/qt6-base
+    - qt6/qtbase
 
 cmake-extra-args:
     - -DFEATURE_developer_build=ON

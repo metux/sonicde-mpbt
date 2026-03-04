@@ -10,7 +10,9 @@ ref:  v0.13.0
 
 buildsystem: cmake
 
-depends:
+build-depends:
     - build/cmake
-    - qt/qt6-base
+
+depends:
+    - qt6/qtbase
     - qt6/qtwebsockets

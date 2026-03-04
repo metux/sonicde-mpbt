@@ -16,7 +16,7 @@ build-depends:
 
 depends:
     - sys/libdrm
-    - qt/qt6-base
+    - qt6/qtbase
     - qt6/qtsensors
     - kde/plasma/kdecoration
     - kde/plasma/kglobalacceld

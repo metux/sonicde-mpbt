@@ -10,9 +10,11 @@ ref: ${@SOLUTION::kf6_version}
 
 buildsystem: cmake
 
-depends:
+build-depends:
     - build/cmake
     - kde/extra-cmake-modules
-    - qt/qt6-base
+
+depends:
+    - qt6/qtbase
     - qt6/qtspeech
     - kde/syntax-highlighting
