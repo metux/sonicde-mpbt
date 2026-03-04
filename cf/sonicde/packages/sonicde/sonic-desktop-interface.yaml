@@ -24,12 +24,12 @@ depends:
     - kde/sonnet
     - kde/kglobalaccel
     - kde/kiconthemes
-    - sonicde/sonic-krunner # forked from kde/kf6/krunner
-    - kde/kio
+    - sonicde/sonic-frameworks-runner
+    - sonicde/sonic-frameworks-io
     - kde/kxmlgui
     - kde/kcmutils
     - kde/knotifyconfig
-    - kde/plasma5support
+    - kde/plasma/plasma5support
     - kde/plasma-framework
     - kde/plasma-activities-stats
     - sonicde/sonic-workspace

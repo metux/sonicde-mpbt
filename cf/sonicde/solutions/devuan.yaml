@@ -8,7 +8,7 @@ kf6_version:        v6.23.0
 qt6_version:        v6.10.2
 qt6_git:            https://code.qt.io/qt
 
-plasma_version:     v6.6.1
+plasma_version:     v6.6.2
 plasma_git:         https://invent.kde.org/plasma/
 
 # default:
@@ -20,6 +20,7 @@ build:
 #    - sonicde/sonic-win
     - sonicde/sonic-desktop-interface
 #    - qt/qt6-base
+    - sonicde/sonic-interface-libraries
 
 # extra environment variables
 env:

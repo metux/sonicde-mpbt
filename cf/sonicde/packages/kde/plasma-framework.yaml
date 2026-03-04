@@ -17,3 +17,4 @@ build-depends:
 depends:
     - qt6/qtbase
     - kde/plasma-activities
+    - sonicde/sonic-frameworks-io

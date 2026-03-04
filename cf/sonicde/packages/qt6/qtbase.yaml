@@ -31,3 +31,9 @@ cmake-extra-args:
     - -DFEATURE_directfb=OFF
     - -DFEATURE_vnc=OFF
     - -DFEATURE_eglfs=OFF
+    - -DQT_FEATURE_ssl=ON
+#    - -DFEATURE_ssl=ON
+    - -DFEATURE_openssl=ON
+    - -DFEATURE_openssl_linked=ON
+
+# FIXME: depends on libssl-dev

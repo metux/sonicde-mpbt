@@ -1,12 +1,12 @@
 sources:
     git:
-        url:    ${@SOLUTION::kf6_git}/${@basename}
+        url:    ${@SOLUTION::plasma_git}/${@basename}.git
         ref:    ${ref}
         depth:  1
         fetch:
           - refs/tags/${ref}:refs/tags/${ref}
 
-ref: ${@SOLUTION::kf6_version}
+ref: ${@SOLUTION::plasma_version}
 
 buildsystem: cmake
 
@@ -16,7 +16,6 @@ build-depends:
 
 depends:
     - qt6/qtbase
-    - kde/kconfig
-    - kde/breeze-icons
-    - kde/kwindowsystem
-    - kde/kitemmodels
+    - kde/kidletime
+    - kde/kunitconversion
+    - kde/kholidays

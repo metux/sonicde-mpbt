@@ -1,0 +1,25 @@
+provides: kde/kf6/krunner
+sources:
+    git:
+        url:    ${@SOLUTION::sonicde_git}/${@basename}
+        ref:    ${ref}
+        depth:  1
+        fetch:
+          - refs/tags/*:refs/tags/*
+          - refs/heads/*:refs/remotes/origin/*
+
+# ref: ${@SOLUTION::kf6_version}
+ref: origin/master
+
+buildsystem: cmake
+
+build-depends:
+    - build/cmake
+    - kde/extra-cmake-modules
+
+depends:
+    - qt6/qtbase
+    - kde/kconfig
+    - kde/breeze-icons
+    - kde/kwindowsystem
+    - kde/kitemmodels
