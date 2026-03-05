@@ -16,6 +16,6 @@ build-depends:
 depends:
     - kde/kf6/karchive
     - kde/kconfig
-    - kde/kcolorscheme
+    - kde/kf6/kcolorscheme
     - kde/kcoreaddons
     - kde/kirigami
