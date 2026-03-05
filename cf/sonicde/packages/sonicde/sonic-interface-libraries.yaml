@@ -17,7 +17,7 @@ build-depends:
 
 depends:
     - qt6/qtbase
-    - kde/kconfig
+    - kde/kf6/kconfig
     - kde/kf6/breeze-icons
     - kde/kwindowsystem
     - kde/kitemmodels
