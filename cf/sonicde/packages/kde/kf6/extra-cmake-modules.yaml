@@ -13,3 +13,5 @@ buildsystem: cmake
 
 depends:
     - qt6/qtbase
+
+# needs python "build" module

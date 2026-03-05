@@ -13,6 +13,7 @@ buildsystem: cmake
 depends:
     - kde/libraries/polkit-qt-1
     - kde/libkscreen
+    - kde/kf6/kdeclarative              # really needed ?
     - sonicde/sonic-layer-shell-qt
 
 build-depends:

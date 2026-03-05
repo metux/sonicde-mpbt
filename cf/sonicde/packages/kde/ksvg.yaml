@@ -17,5 +17,5 @@ depends:
     - kde/kf6/karchive
     - kde/kf6/kconfig
     - kde/kf6/kcolorscheme
-    - kde/kcoreaddons
+    - kde/kf6/kcoreaddons
     - kde/kirigami

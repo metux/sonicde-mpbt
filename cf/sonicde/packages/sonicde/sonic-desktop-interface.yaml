@@ -16,13 +16,13 @@ depends:
     - qt6/qtsvg
     - kde/ksvg
     - kde/kf6/kauth
-    - kde/kcrash
+    - kde/kf6/kcrash
     - kde/knewstuff
     - kde/knotifications
     - kde/kf6/kcodecs
-    - kde/kdbusaddons
+    - kde/kf6/kdbusaddons
     - kde/sonnet
-    - kde/kglobalaccel
+    - kde/kf6/kglobalaccel
     - kde/kiconthemes
     - sonicde/sonic-frameworks-runner
     - sonicde/sonic-frameworks-io

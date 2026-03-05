@@ -15,4 +15,4 @@ build-depends:
 
 depends:
     - qt6/qtbase
-    - kde/kconfigwidgets
+    - kde/kf6/kconfigwidgets

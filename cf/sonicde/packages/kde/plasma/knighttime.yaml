@@ -14,11 +14,11 @@ build-depends:
     - kde/kf6/extra-cmake-modules
 
 depends:
-    - kde/kdeclarative
+    - kde/kf6/kdeclarative
     - qt6/qtbase
     - qt6/qtlocation
     - kde/qcoro6
-    - kde/kded
+    - kde/kf6/kded
     - kde/kparts
     - kde/ktexteditor
     - qt6/qtspeech
