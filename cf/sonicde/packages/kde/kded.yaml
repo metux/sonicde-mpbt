@@ -11,4 +11,4 @@ ref: ${@SOLUTION::kf6_version}
 buildsystem: cmake
 
 depends:
-    - kde/extra-cmake-modules
+    - kde/kf6/extra-cmake-modules

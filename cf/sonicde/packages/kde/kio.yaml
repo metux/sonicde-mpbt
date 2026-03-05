@@ -11,13 +11,13 @@ ref: ${@SOLUTION::kf6_version}
 buildsystem: cmake
 
 build-depends:
-    - kde/extra-cmake-modules
+    - kde/kf6/extra-cmake-modules
 
 depends:
     - qt6/qtbase
     - kde/kservice
     - kde/solid
-    - kde/kbookmarks
+    - kde/kf6/kbookmarks
     - kde/kcompletion
     - kde/kitemviews
     - kde/kjobwidgets

@@ -14,7 +14,7 @@ ref: origin/maint/6.23.0
 buildsystem: cmake
 
 build-depends:
-    - kde/extra-cmake-modules
+    - kde/kf6/extra-cmake-modules
 
 depends:
     - qt6/qtbase

@@ -15,11 +15,11 @@ depends:
     - qt6/qt5compat
     - qt6/qtsvg
     - kde/ksvg
-    - kde/kauth
+    - kde/kf6/kauth
     - kde/kcrash
     - kde/knewstuff
     - kde/knotifications
-    - kde/kcodecs
+    - kde/kf6/kcodecs
     - kde/kdbusaddons
     - kde/sonnet
     - kde/kglobalaccel
@@ -27,7 +27,7 @@ depends:
     - sonicde/sonic-frameworks-runner
     - sonicde/sonic-frameworks-io
     - kde/kxmlgui
-    - kde/kcmutils
+    - kde/kf6/kcmutils
     - kde/knotifyconfig
     - kde/plasma/plasma5support
     - kde/plasma-framework

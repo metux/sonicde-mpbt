@@ -13,7 +13,7 @@ ref: origin/mtx/wip
 buildsystem: cmake
 
 build-depends:
-    - kde/extra-cmake-modules
+    - kde/kf6/extra-cmake-modules
 
 depends:
     - qt6/qtbase

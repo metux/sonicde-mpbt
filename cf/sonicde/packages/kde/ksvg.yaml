@@ -11,10 +11,10 @@ ref: ${@SOLUTION::kf6_version}
 buildsystem: cmake
 
 build-depends:
-    - kde/extra-cmake-modules
+    - kde/kf6/extra-cmake-modules
 
 depends:
-    - kde/karchive
+    - kde/kf6/karchive
     - kde/kconfig
     - kde/kcolorscheme
     - kde/kcoreaddons

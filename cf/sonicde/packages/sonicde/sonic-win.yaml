@@ -12,7 +12,7 @@ ref: origin/Plasma/6.6
 buildsystem: cmake
 
 build-depends:
-    - kde/extra-cmake-modules
+    - kde/kf6/extra-cmake-modules
 
 depends:
     - sys/libdrm
