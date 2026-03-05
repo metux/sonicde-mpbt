@@ -1,15 +1,14 @@
-provides: kde/kf6/krunner
 sources:
     git:
         url:    ${@SOLUTION::sonicde_git}/${@basename}
         ref:    ${ref}
-        depth:  1
         fetch:
           - refs/tags/*:refs/tags/*
           - refs/heads/*:refs/remotes/origin/*
 
 # ref: ${@SOLUTION::kf6_version}
-ref: origin/master
+# ref: origin/master
+ref: origin/mtx/wip
 
 buildsystem: cmake
 

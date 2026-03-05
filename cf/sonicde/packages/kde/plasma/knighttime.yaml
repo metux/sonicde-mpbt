@@ -28,4 +28,4 @@ depends:
     - kde/ktextwidgets
     - kde/kstatusnotifieritem
     - kde/libkscreen
-    - kde/libksysguard
+    - kde/plasma/libksysguard

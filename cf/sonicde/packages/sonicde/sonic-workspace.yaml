@@ -10,11 +10,10 @@ ref: origin/Plasma/6.6
 
 buildsystem: cmake
 
-#depends:
-#    - kde/plasma/kscreenlocker
-
 depends:
     - kde/libraries/polkit-qt-1
+    - kde/libkscreen
+    - sonicde/sonic-layer-shell-qt
 
 build-depends:
     - buildtool/extra-cmake-modules

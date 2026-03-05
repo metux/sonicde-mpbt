@@ -31,7 +31,7 @@ depends:
     - kde/knotifyconfig
     - kde/plasma/plasma5support
     - kde/plasma-framework
-    - kde/plasma-activities-stats
+    - kde/plasma/plasma-activities-stats
     - sonicde/sonic-workspace
 #    - kde/plasma/kscreenlocker
     - sonicde/sonic-win

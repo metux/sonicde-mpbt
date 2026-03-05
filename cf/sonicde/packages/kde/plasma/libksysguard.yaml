@@ -1,6 +1,6 @@
 sources:
     git:
-        url:    https://invent.kde.org/plasma/${@basename}.git
+        url:    ${@SOLUTION::plasma_git}/${@basename}
         ref:    ${ref}
         depth:  1
         fetch:
@@ -16,3 +16,6 @@ build-depends:
 
 depends:
     - qt6/qtbase
+
+# depends on libnl-3-dev and libnl-route-3-dev
+# depends on libsensors-dev

@@ -3,7 +3,6 @@ sources:
     git:
         url:    ${@SOLUTION::sonicde_git}/${@basename}
         ref:    ${ref}
-        depth:  1
         fetch:
           - refs/tags/*:refs/tags/*
           - refs/heads/*:refs/remotes/origin/*

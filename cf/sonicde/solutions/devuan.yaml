@@ -1,5 +1,6 @@
 # needed by several sources
-sonicde_git:        https://github.com/Sonic-DE
+#sonicde_git:        https://github.com/Sonic-DE
+sonicde_git:        git@github.com:Sonic-DE
 xlibre_git:         https://github.com/X11Libre
 
 kf6_git:            https://invent.kde.org/frameworks/

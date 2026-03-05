@@ -28,6 +28,6 @@ depends:
     - kde/ktextwidgets
     - kde/kstatusnotifieritem
     - kde/libkscreen
-    - kde/libksysguard
+    - kde/plasma/libksysguard
     - kde/plasma/layer-shell-qt
     - kde/kwin-dbus-interface
