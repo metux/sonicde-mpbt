@@ -10,9 +10,6 @@ ref: ${@SOLUTION::kf6_version}
 
 buildsystem: cmake
 
-depends:
-    - build/cmake
+build-depends:
+    - 3rdparty/cmake
     - kde/extra-cmake-modules
-
-cmake-extra-args:
-    - "-GNinja"

@@ -11,7 +11,7 @@ ref: ${@SOLUTION::kf6_version}
 buildsystem: cmake
 
 build-depends:
-    - build/cmake
+    - 3rdparty/cmake
     - kde/extra-cmake-modules
 
 depends:
@@ -25,4 +25,3 @@ depends:
 
 cmake-extra-args:
     - -DWITH_WAYLAND=OFF
-    - -GNinja

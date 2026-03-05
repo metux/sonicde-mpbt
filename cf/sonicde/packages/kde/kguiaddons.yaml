@@ -14,7 +14,7 @@ ref: origin/maint/6.23.0
 buildsystem: cmake
 
 build-depends:
-    - build/cmake
+    - 3rdparty/cmake
     - kde/extra-cmake-modules
 
 depends:
