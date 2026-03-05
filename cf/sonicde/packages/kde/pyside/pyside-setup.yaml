@@ -12,9 +12,6 @@ ref: origin/maint/6.10.2
 
 buildsystem: cmake
 
-build-depends:
-    - 3rdparty/cmake
-
 depends:
     - qt6/qtbase
 

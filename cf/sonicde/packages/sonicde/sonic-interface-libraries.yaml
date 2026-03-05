@@ -13,12 +13,11 @@ ref: origin/mtx/wip
 buildsystem: cmake
 
 build-depends:
-    - build/cmake
     - kde/extra-cmake-modules
 
 depends:
     - qt6/qtbase
     - kde/kconfig
-    - kde/breeze-icons
+    - kde/kf6/breeze-icons
     - kde/kwindowsystem
     - kde/kitemmodels

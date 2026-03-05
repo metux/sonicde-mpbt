@@ -11,10 +11,9 @@ ref: ${@SOLUTION::kf6_version}
 buildsystem: cmake
 
 build-depends:
-    - 3rdparty/cmake
     - kde/extra-cmake-modules
 
 depends:
     - qt6/qtbase
     - kde/kconfig
-    - kde/breeze-icons
+    - kde/kf6/breeze-icons
