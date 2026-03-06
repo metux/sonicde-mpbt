@@ -16,4 +16,4 @@ build-depends:
 depends:
     - qt6/qtbase
     - qt6/qtspeech
-    - kde/syntax-highlighting
+    - kde/kf6/syntax-highlighting
