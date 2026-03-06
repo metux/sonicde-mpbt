@@ -16,5 +16,5 @@ build-depends:
 depends:
     - qt6/qtbase
     - kde/kf6/kpackage
-    - kde/kwidgetsaddons
+    - kde/kf6/kwidgetsaddons
     - kde/kf6/attica
