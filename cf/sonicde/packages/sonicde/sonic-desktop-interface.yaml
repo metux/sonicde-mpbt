@@ -21,19 +21,18 @@ depends:
     - kde/kf6/knotifications
     - kde/kf6/kcodecs
     - kde/kf6/kdbusaddons
-    - kde/sonnet
+    - kde/kf6/sonnet
     - kde/kf6/kglobalaccel
     - kde/kf6/kiconthemes
     - sonicde/sonic-frameworks-runner
     - sonicde/sonic-frameworks-io
-    - kde/kxmlgui
+    - kde/kf6/kxmlgui
     - kde/kf6/kcmutils
     - kde/kf6/knotifyconfig
     - kde/plasma/plasma5support
-    - kde/plasma-framework
+    - kde/plasma/plasma-framework
     - kde/plasma/plasma-activities-stats
     - sonicde/sonic-workspace
-#    - kde/plasma/kscreenlocker
     - sonicde/sonic-win
 
 build-depends:

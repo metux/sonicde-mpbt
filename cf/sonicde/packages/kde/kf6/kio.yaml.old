@@ -16,7 +16,7 @@ build-depends:
 depends:
     - qt6/qtbase
     - kde/kservice
-    - kde/solid
+    - kde/kf6/solid
     - kde/kf6/kbookmarks
     - kde/kf6/kcompletion
     - kde/kitemviews
