@@ -15,4 +15,4 @@ build-depends:
 
 depends:
     - qt6/qtbase
-    - kde/kpackage
+    - kde/kf6/kpackage

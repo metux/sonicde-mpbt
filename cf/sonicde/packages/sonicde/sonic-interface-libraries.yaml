@@ -20,4 +20,4 @@ depends:
     - kde/kf6/kconfig
     - kde/kf6/breeze-icons
     - kde/kwindowsystem
-    - kde/kitemmodels
+    - kde/kf6/kitemmodels

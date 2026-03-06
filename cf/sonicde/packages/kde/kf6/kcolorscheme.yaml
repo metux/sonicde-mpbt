@@ -16,4 +16,4 @@ build-depends:
 depends:
     - qt6/qtbase
     - kde/kguiaddons
-    - kde/ki18n
+    - kde/kf6/ki18n

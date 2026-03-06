@@ -19,12 +19,12 @@ depends:
     - qt6/qtlocation
     - kde/qcoro6
     - kde/kf6/kded
-    - kde/kparts
-    - kde/ktexteditor
+    - kde/kf6/kparts
+    - kde/kf6/ktexteditor
     - qt6/qtspeech
     - kde/prison
-    - kde/kwallet
-    - kde/ktextwidgets
-    - kde/kstatusnotifieritem
+    - kde/kf6/kwallet
+    - kde/kf6/ktextwidgets
+    - kde/kf6/kstatusnotifieritem
     - kde/libkscreen
     - kde/plasma/libksysguard

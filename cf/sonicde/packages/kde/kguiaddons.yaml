@@ -1,3 +1,4 @@
+## FIXME
 sources:
     git:
 #        url:    ${@SOLUTION::kf6_git}/${@basename}

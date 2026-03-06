@@ -18,9 +18,8 @@ install-prefix: ${@PROJECT::@homedir}/SONICDE
 
 # what to build (can use packages or provides here)
 build:
-#    - sonicde/sonic-win
+    - sonicde/sonic-win
     - sonicde/sonic-desktop-interface
-#    - qt/qt6-base
     - sonicde/sonic-interface-libraries
 
 # extra environment variables

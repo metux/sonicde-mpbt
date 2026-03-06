@@ -15,6 +15,6 @@ build-depends:
 
 depends:
     - qt6/qtbase
-    - kde/kidletime
-    - kde/kunitconversion
-    - kde/kholidays
+    - kde/kf6/kidletime
+    - kde/kf6/kunitconversion
+    - kde/kf6/kholidays
