@@ -14,5 +14,5 @@ build-depends:
     - kde/kf6/extra-cmake-modules
 
 depends:
-    - platform/libcanberra
+    - sys/libcanberra
     - qt6/qtbase

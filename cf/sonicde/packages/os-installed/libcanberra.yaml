@@ -1,4 +1,4 @@
-provides: platform/libcanberra
+provides: sys/libcanberra
 type: system
 pkg-config: libcanberra
 

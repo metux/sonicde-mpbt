@@ -15,4 +15,4 @@ build-depends:
 
 depends:
     - qt6/qtbase
-    - platform/libaspell
+    - sys/libaspell

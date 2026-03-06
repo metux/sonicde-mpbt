@@ -16,6 +16,5 @@ build-depends:
 depends:
     - qt6/qtbase
     - kde/qca6
-
-cmake-extra-args:
-    - -DWITH_QCA=OFF
+    - sys/libgcrypt
+    - sys/libsecret-1

@@ -1,3 +1,4 @@
+# original: https://invent.kde.org/plasma/plasma-framework
 sources:
     git:
         url:    ${@SOLUTION::sonicde_git}/${@basename}
@@ -7,8 +8,7 @@ sources:
           - refs/heads/*:refs/remotes/origin/*
 
 # ref: ${@SOLUTION::kf6_version}
-# ref: origin/master
-ref: origin/mtx/wip
+ref: origin/master
 
 buildsystem: cmake
 

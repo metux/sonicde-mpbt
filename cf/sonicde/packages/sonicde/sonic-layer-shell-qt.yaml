@@ -1,4 +1,3 @@
-provides: kde/plasma/layer-shell-qt
 sources:
     git:
         url:    ${@SOLUTION::sonicde_git}/${@basename}

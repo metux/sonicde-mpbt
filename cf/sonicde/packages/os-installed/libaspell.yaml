@@ -1,4 +1,4 @@
-provides: platform/libaspell
+provides: sys/libaspell
 type: system
 pkg-config: libapell
 

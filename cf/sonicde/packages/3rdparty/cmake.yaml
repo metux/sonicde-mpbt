@@ -9,7 +9,3 @@ sources:
 ref: v3.28.0
 
 buildsystem: cmake
-
-cmake-extra-args:
-    - "-G"
-    - Ninja
