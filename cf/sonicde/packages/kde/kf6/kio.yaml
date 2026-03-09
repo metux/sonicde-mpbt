@@ -15,12 +15,14 @@ build-depends:
 
 depends:
     - qt6/qtbase
-    - kde/kservice
+    - kde/kf6/kservice
     - kde/kf6/solid
     - kde/kf6/kbookmarks
     - kde/kf6/kcompletion
-    - kde/kitemviews
+    - kde/kf6/kitemviews
     - kde/kf6/kjobwidgets
+    - kde/kf6/kcolorscheme
+    - kde/kf6/kiconthemes
 
 cmake-extra-args:
     - -DWITH_WAYLAND=OFF
