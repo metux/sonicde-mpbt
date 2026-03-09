@@ -28,3 +28,4 @@ depends:
     - kde/kf6/ktextwidgets
     - kde/kf6/kstatusnotifieritem
     - kde/plasma/libksysguard
+    - kde/kf6/kholidays

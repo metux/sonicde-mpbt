@@ -15,6 +15,7 @@ build-depends:
 
 depends:
     - qt6/qtbase
+    - qt6/qt5compat
 
 cmake-extra-args:
     - -DBUILD_WITH_QT6=ON

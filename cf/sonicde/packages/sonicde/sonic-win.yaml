@@ -21,6 +21,9 @@ depends:
     - kde/plasma/kdecoration
     - kde/plasma/kglobalacceld
     - kde/plasma/knighttime
+    - kde/kf6/kidletime
+    - kde/kf6/ksvg
+    - kde/kf6/kcmutils
 
 cmake-extra-args:
     - -DBUILD_TESTING=OFF

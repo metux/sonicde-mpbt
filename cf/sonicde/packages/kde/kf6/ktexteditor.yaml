@@ -18,3 +18,4 @@ depends:
     - qt6/qtspeech
     - kde/kf6/syntax-highlighting
     - kde/kf6/sonnet
+    - sonicde/sonic-frameworks-auth

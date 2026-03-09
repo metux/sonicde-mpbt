@@ -15,6 +15,7 @@ build-depends:
 
 depends:
     - qt6/qtbase
+    - kde/kf6/knewstuff
 
 # depends on libnl-3-dev and libnl-route-3-dev
 # depends on libsensors-dev
