@@ -19,7 +19,6 @@ depends:
     - qt6/qtbase
     - qt6/qtsensors
     - kde/plasma/kdecoration
-#    - kde/plasma/kglobalacceld
     - kde/plasma/knighttime
     - kde/kf6/kidletime
     - kde/kf6/ksvg

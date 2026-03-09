@@ -18,9 +18,8 @@ depends:
     - qt6/qtbase
     - qt6/qtsensors
     - kde/plasma/kdecoration
-#    - kde/plasma/kglobalacceld
-    - sonicde/sonic-globalacceld
     - kde/plasma/knighttime
+    - sonicde/sonic-globalacceld
 
 cmake-extra-args:
     - -DBUILD_TESTING=OFF
