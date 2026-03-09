@@ -17,6 +17,7 @@ depends:
     - kde/kf6/prison
     - sonicde/sonic-screen
     - sonicde/sonic-layer-shell-qt
+    - sonicde/sonic-interface-libraries
 
 build-depends:
     - buildtool/extra-cmake-modules
