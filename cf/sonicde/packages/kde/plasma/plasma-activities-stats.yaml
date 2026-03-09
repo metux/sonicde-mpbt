@@ -12,6 +12,7 @@ buildsystem: cmake
 
 build-depends:
     - kde/kf6/extra-cmake-modules
+    - kde/plasma/plasma-activities
 
 depends:
     - qt6/qtbase
