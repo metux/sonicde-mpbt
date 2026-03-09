@@ -1,3 +1,5 @@
+# we already have a sonic repo, but that still very old
+
 sources:
     git:
         url:    ${@SOLUTION::plasma_git}/${@basename}
@@ -15,3 +17,11 @@ build-depends:
 
 depends:
     - qt6/qtbase
+    - kde/kf6/kconfig
+    - kde/kf6/kcoreaddons
+    - kde/kf6/kcrash
+    - kde/kf6/kdbusaddons
+    - kde/kf6/kglobalaccel
+    - kde/kf6/kservice
+    - kde/kf6/kio
+    - sonicde/sonic-frameworks-windowsystem

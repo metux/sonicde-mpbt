@@ -15,7 +15,7 @@ depends:
     - qt6/qt5compat
     - qt6/qtsvg
     - kde/kf6/ksvg
-    - kde/kf6/kauth
+    - sonicde/sonic-frameworks-auth
     - kde/kf6/kcrash
     - kde/kf6/knewstuff
     - kde/kf6/knotifications

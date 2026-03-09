@@ -15,3 +15,7 @@ build-depends:
 
 depends:
     - qt6/qtbase
+#    - 3rdparty/qrencode
+
+#cmake-extra-args:
+#    - -DWITH_QRENCODE=OFF

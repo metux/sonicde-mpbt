@@ -6,14 +6,16 @@ sources:
           - refs/heads/*:refs/remotes/origin/*
           - refs/tags/*:refs/tags/*
 
-ref: origin/Plasma/6.6
+# ref: origin/Plasma/6.6
+ref: origin/mtx/hack/no-wayland
 
 buildsystem: cmake
 
 depends:
     - kde/libraries/polkit-qt-1
-    - kde/libkscreen
     - kde/kf6/kdeclarative              # really needed ?
+    - kde/kf6/prison
+    - sonicde/sonic-screen
     - sonicde/sonic-layer-shell-qt
 
 build-depends:

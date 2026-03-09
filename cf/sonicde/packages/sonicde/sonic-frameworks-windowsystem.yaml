@@ -1,3 +1,4 @@
+provides: kde/kwindowsystem
 sources:
     git:
         url:    ${@SOLUTION::sonicde_git}/${@basename}
@@ -6,9 +7,12 @@ sources:
           - refs/heads/*:refs/remotes/origin/*
           - refs/tags/*:refs/tags/*
 
-ref: origin/Plasma/6.6
+ref: origin/master
 
 buildsystem: cmake
 
 build-depends:
     - buildtool/extra-cmake-modules
+
+cmake-extra-args:
+    - -DKWINDOWSYSTEM_WAYLAND=OFF

@@ -12,6 +12,7 @@ buildsystem: cmake
 
 build-depends:
     - kde/kf6/extra-cmake-modules
+    - qt6/qttools
 
 depends:
     - qt6/qtbase

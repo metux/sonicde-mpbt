@@ -14,17 +14,17 @@ build-depends:
     - kde/kf6/extra-cmake-modules
 
 depends:
-    - kde/kf6/kdeclarative
     - qt6/qtbase
     - qt6/qtlocation
+    - qt6/qtspeech
+    - sonicde/sonic-screen
     - kde/qcoro6
+    - kde/kf6/kdeclarative
     - kde/kf6/kded
     - kde/kf6/kparts
     - kde/kf6/ktexteditor
-    - qt6/qtspeech
-    - kde/prison
+#    - kde/kf6/prison
     - kde/kf6/kwallet
     - kde/kf6/ktextwidgets
     - kde/kf6/kstatusnotifieritem
-    - kde/libkscreen
     - kde/plasma/libksysguard

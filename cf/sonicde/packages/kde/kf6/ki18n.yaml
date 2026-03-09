@@ -13,5 +13,8 @@ buildsystem: cmake
 build-depends:
     - kde/kf6/extra-cmake-modules
 
+depends:
+    - qt6/qtdeclarative
+
 cmake-extra-args:
     - -DBUILD_TESTING=OFF

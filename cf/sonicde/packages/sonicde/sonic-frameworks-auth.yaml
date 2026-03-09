@@ -3,10 +3,11 @@ sources:
         url:    ${@SOLUTION::sonicde_git}/${@basename}
         ref:    ${ref}
         fetch:
-          - refs/tags/*:refs/tags/*
           - refs/heads/*:refs/remotes/origin/*
+          - refs/tags/*:refs/tags/*
 
 ref: origin/master
+#ref: origin/mtx/wip
 
 buildsystem: cmake
 
@@ -15,7 +16,3 @@ build-depends:
 
 depends:
     - qt6/qtbase
-    - kde/kf6/kconfig
-    - kde/kf6/breeze-icons
-    - kde/kwindowsystem
-    - kde/kf6/kitemmodels

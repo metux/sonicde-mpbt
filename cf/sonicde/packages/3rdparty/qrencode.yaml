@@ -1,0 +1,15 @@
+sources:
+    git:
+        url:    https://github.com/fukuchi/libqrencode.git
+        ref:    ${ref}
+        depth:  1
+        fetch:
+          - refs/tags/*:refs/tags/*
+          - refs/heads/*:refs/remotes/origin/*
+buildsystem: cmake
+ref: origin/master
+
+cmake-extra-args:
+    - -DWITH_TOOLS=OFF
+    - -DWITH_TESTS=OFF
+    - -DBUILD_SHARED_LIBS=ON

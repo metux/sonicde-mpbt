@@ -1,12 +1,12 @@
 sources:
     git:
-        url:    ${@SOLUTION::kf6_git}/${@basename}
+        url:    https://invent.kde.org/libraries/${@basename}.git
         ref:    ${ref}
         depth:  1
         fetch:
           - refs/tags/${ref}:refs/tags/${ref}
 
-ref: ${@SOLUTION::kf6_version}
+ref: v2.3.10
 
 buildsystem: cmake
 
@@ -15,3 +15,6 @@ build-depends:
 
 depends:
     - qt6/qtbase
+
+cmake-extra-args:
+    - -DBUILD_WITH_QT6=ON

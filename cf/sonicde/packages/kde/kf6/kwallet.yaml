@@ -15,6 +15,6 @@ build-depends:
 
 depends:
     - qt6/qtbase
-    - kde/qca6
+    - kde/libraries/qca
     - sys/libgcrypt
     - sys/libsecret-1

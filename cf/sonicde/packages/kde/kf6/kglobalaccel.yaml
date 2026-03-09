@@ -15,6 +15,3 @@ build-depends:
 
 depends:
     - qt6/qtbase
-
-cmake-extra-args:
-    - -DBUILD_KGLOBALACCELD=ON
