@@ -17,3 +17,4 @@ depends:
     - qt6/qtbase
     - qt6/qtspeech
     - kde/kf6/syntax-highlighting
+    - kde/kf6/sonnet
