@@ -21,6 +21,16 @@ build:
     - sonicde/sonic-win
     - sonicde/sonic-desktop-interface
     - sonicde/sonic-interface-libraries
+    - sonicde/sonic-desktop-interface
+    - sonicde/sonic-frameworks-runner
+    - sonicde/sonic-interface-libraries
+    - sonicde/sonic-frameworks-auth
+    - sonicde/sonic-frameworks-windowsystem
+    - sonicde/sonic-layer-shell-qt
+    - sonicde/sonic-workspace
+    - sonicde/sonic-frameworks-io
+    - sonicde/sonic-globalacceld
+    - sonicde/sonic-screen
 
 # extra environment variables
 env:

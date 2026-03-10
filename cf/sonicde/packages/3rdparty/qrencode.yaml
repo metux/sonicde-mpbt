@@ -4,10 +4,11 @@ sources:
         ref:    ${ref}
         depth:  1
         fetch:
-          - refs/tags/*:refs/tags/*
-          - refs/heads/*:refs/remotes/origin/*
+          - refs/tags/${ref}:refs/tags/${ref}
+
 buildsystem: cmake
-ref: origin/master
+
+ref: v4.1.1
 
 cmake-extra-args:
     - -DWITH_TOOLS=OFF
