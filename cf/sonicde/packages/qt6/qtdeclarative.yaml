@@ -21,3 +21,6 @@ cmake-extra-args:
 #    - -DFEATURE_private_headers=ON
     - -DQT_FEATURE_developer_build=ON
 #    - -DQT_FEATURE_private_modules=ON
+# Qt's cmake scripts are broken, assuming wrong pathes leading outside of build tree
+    - -DQT_BUILD_TESTS=OFF
+    - -DQT_BUILD_EXAMPLES=OFF
