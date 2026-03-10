@@ -1,0 +1,19 @@
+sources:
+    git:
+        url:    ${@SOLUTION::sonicde_git}/${@basename}
+        ref:    ${ref}
+        fetch:
+          - refs/heads/*:refs/remotes/origin/*
+          - refs/tags/*:refs/tags/*
+
+ref: origin/mtx/no-wayland
+
+buildsystem: cmake
+
+build-depends:
+    - kde/kf6/extra-cmake-modules
+
+depends:
+    - qt6/qtbase
+
+# needs libpam-dev

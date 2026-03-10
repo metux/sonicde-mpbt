@@ -34,6 +34,8 @@ depends:
     - sonicde/sonic-workspace
     - sonicde/sonic-win
     - sonicde/sonic-interface-libraries
+#    - kde/plasma/kscreenlocker
+    - sonicde/sonic-screenlocker
 
 build-depends:
     - buildtool/extra-cmake-modules
