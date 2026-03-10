@@ -18,6 +18,7 @@ depends:
     - sonicde/sonic-screen
     - sonicde/sonic-layer-shell-qt
     - sonicde/sonic-interface-libraries
+    - sonicde/sonic-screenlocker
 
 build-depends:
     - buildtool/extra-cmake-modules
