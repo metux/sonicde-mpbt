@@ -6,7 +6,7 @@ sources:
           - refs/heads/*:refs/remotes/origin/*
           - refs/tags/*:refs/tags/*
 
-ref: origin/mtx/hack/Plasma/6.6
+ref: origin/Plasma/6.6
 
 buildsystem: cmake
 
@@ -34,7 +34,6 @@ depends:
     - sonicde/sonic-workspace
     - sonicde/sonic-win
     - sonicde/sonic-interface-libraries
-#    - kde/plasma/kscreenlocker
     - sonicde/sonic-screenlocker
 
 build-depends:
