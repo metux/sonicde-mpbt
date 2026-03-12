@@ -6,6 +6,6 @@ sources:
         fetch:
           - refs/tags/${ref}:refs/tags/${ref}
 
-ref: v3.28.0
-
 buildsystem: cmake
+
+ref: v3.28.0

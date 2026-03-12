@@ -1,5 +1,5 @@
 provides: sys/libdrm
-type: bundle
+
 sources:
     git:
         url:    ${@SOLUTION::xlibre_git}/mirror.fdo.drm
@@ -7,5 +7,7 @@ sources:
         depth:  1
         fetch:
           - refs/tags/*:refs/tags/*
+
 buildsystem: meson
+
 ref: libdrm-2.4.121

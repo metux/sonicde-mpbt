@@ -19,7 +19,7 @@ install-prefix: ${@PROJECT::@homedir}/SONICDE
 # what to build (can use packages or provides here)
 # just listing all sonic repos alphabetically here
 build:
-    - sonicde/silver-sddm
+#    - sonicde/silver-sddm
     - sonicde/silver-theme
     - sonicde/sonic-audio-applet-pulse
     - sonicde/sonic-branding
