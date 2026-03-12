@@ -22,8 +22,8 @@ depends:
     - kde/kf6/kcodecs
     - kde/kf6/kdbusaddons
     - kde/kf6/sonnet
-    - kde/kf6/kglobalaccel
     - kde/kf6/kiconthemes
+    - sonicde/sonic-frameworks-globalaccel
     - sonicde/sonic-frameworks-runner
     - sonicde/sonic-frameworks-io
     - kde/kf6/kxmlgui

@@ -17,20 +17,31 @@ plasma_git:         https://invent.kde.org/plasma/
 install-prefix: ${@PROJECT::@homedir}/SONICDE
 
 # what to build (can use packages or provides here)
+# just listing all sonic repos alphabetically here
 build:
-    - sonicde/sonic-win
+    - sonicde/silver-sddm
+    - sonicde/silver-theme
+    - sonicde/sonic-audio-applet-pulse
+    - sonicde/sonic-branding
     - sonicde/sonic-desktop-interface
-    - sonicde/sonic-interface-libraries
-    - sonicde/sonic-desktop-interface
-    - sonicde/sonic-frameworks-runner
-    - sonicde/sonic-interface-libraries
     - sonicde/sonic-frameworks-auth
-    - sonicde/sonic-frameworks-windowsystem
-    - sonicde/sonic-layer-shell-qt
-    - sonicde/sonic-workspace
+    - sonicde/sonic-frameworks-core-addons
+    - sonicde/sonic-frameworks-doctools
+    - sonicde/sonic-frameworks-globalaccel
     - sonicde/sonic-frameworks-io
+    - sonicde/sonic-frameworks-runner
+    - sonicde/sonic-frameworks-windowsystem
     - sonicde/sonic-globalacceld
+    - sonicde/sonic-interface-libraries
+    - sonicde/sonic-layer-shell-qt
+    - sonicde/sonic-mobile-interface
+    - sonicde/sonic-network-manager
     - sonicde/sonic-screen
+    - sonicde/sonic-screenlocker
+    - sonicde/sonic-system-info
+    - sonicde/sonic-win
+    - sonicde/sonic-workspace
+    - sonicde/sonic-workspace-addons
 
 # extra environment variables
 env:
