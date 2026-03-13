@@ -12,3 +12,9 @@ buildsystem: cmake
 
 build-depends:
     - buildtool/extra-cmake-modules
+
+depends:
+    - kde/libraries/pulseaudio-qt
+
+cmake-extra-args:
+    - -DBUILD_DOC=OFF

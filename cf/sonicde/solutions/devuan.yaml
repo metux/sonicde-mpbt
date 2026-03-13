@@ -22,11 +22,11 @@ build:
 #    - sonicde/silver-sddm
     - sonicde/silver-theme
     - sonicde/sonic-audio-applet-pulse
-    - sonicde/sonic-branding
+#    - sonicde/sonic-branding
     - sonicde/sonic-desktop-interface
     - sonicde/sonic-frameworks-auth
     - sonicde/sonic-frameworks-core-addons
-    - sonicde/sonic-frameworks-doctools
+#    - sonicde/sonic-frameworks-doctools
     - sonicde/sonic-frameworks-globalaccel
     - sonicde/sonic-frameworks-io
     - sonicde/sonic-frameworks-runner

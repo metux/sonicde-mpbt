@@ -12,3 +12,19 @@ buildsystem: cmake
 
 build-depends:
     - buildtool/extra-cmake-modules
+
+depends:
+    - kde/kf6/networkmanager-qt
+    - kde/kf6/modemmanager-qt
+    - kde/plasma/kpipewire
+    - kde/libraries/kirigami-addons
+    - sonicde/sonic-win
+
+#cmake-extra-args:
+#    - -DQt6_DIR=/home/nekrad/SONICDE/lib/cmake/Qt6
+#    - -DQt6Qml_DIR=/home/nekrad/SONICDE/lib/cmake/Qt6Qml \
+#    - -DQt6QmlPrivate_DIR=/home/nekrad/SONICDE/lib/cmake/Qt6QmlPrivate \
+#    - -DCMAKE_VERBOSE_MAKEFILE=ON \
+#    - -DCMAKE_FIND_DEBUG_MODE=ON
+#    - -DCMAKE_INSTALL_PREFIX=/home/nekrad/SONICDE \
+ # -DCMAKE_PREFIX_PATH=/home/nekrad/SONICDE/Qt/6.x.y;/home/nekrad/SONICDE/lib/cmake \

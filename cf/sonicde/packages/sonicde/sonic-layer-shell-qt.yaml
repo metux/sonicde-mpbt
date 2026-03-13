@@ -23,4 +23,3 @@ depends:
 
 cmake-extra-args:
     - -DBUILD_TESTING=OFF
-    - -DKWIN_BUILD_SCREENLOCKER=OFF

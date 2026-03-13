@@ -6,6 +6,13 @@ sources:
           - refs/heads/*:refs/remotes/origin/*
           - refs/tags/*:refs/tags/*
 
+    git-ext:
+        upstream:
+            url: https://invent.kde.org/frameworks/kglobalaccel.git
+            fetch:
+              - refs/heads/*:refs/remotes/upstream/*
+              - refs/tags/*:refs/tags/upstream/*
+
 ref: origin/master
 
 buildsystem: cmake

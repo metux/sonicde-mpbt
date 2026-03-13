@@ -1,6 +1,6 @@
 sources:
     git:
-        url:    ${@SOLUTION::plasma_git}/${@basename}
+        url:    ${@SOLUTION::plasma_git}/${@basename}.git
         ref:    ${ref}
         depth:  1
         fetch:
@@ -16,4 +16,10 @@ build-depends:
 depends:
     - qt6/qtbase
 
-# needs libpam-dev
+# libpipewire-0.3-dev
+# libavcodec-dev
+# libavformat-dev
+# libavfilter
+
+cmake-extra-args:
+    - -DBUILD_TESTING=OFF # needs wayland

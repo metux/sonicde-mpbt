@@ -8,7 +8,6 @@ sources:
           - refs/tags/*:refs/tags/*
           - refs/heads/*:refs/remotes/origin/*
 
-# ref: ${@SOLUTION::plasma_version}
 ref: origin/master
 
 buildsystem: cmake
