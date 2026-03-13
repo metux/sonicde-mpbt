@@ -43,6 +43,9 @@ build:
     - sonicde/sonic-workspace
     - sonicde/sonic-workspace-addons
 
+# very old ... still Qt5
+#    - sonicde/sonic-sysguard
+
 # extra environment variables
 env:
     PATH: "${install-prefix}/bin:/bin:/usr/bin"

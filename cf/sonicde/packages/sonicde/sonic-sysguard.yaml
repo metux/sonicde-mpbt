@@ -1,0 +1,23 @@
+provides: kde/kwin-dbus-interface
+sources:
+    git:
+        url:    ${@SOLUTION::sonicde_git}/${@basename}
+        ref:    ${ref}
+        fetch:
+          - refs/heads/*:refs/remotes/origin/*
+          - refs/tags/*:refs/tags/*
+
+#ref: origin/Plasma/6.6
+ref: origin/master
+
+buildsystem: cmake
+
+build-depends:
+    - kde/kf6/extra-cmake-modules
+
+depends:
+    - qt6/qtbase
+    - kde/kf6/knewstuff
+
+# depends on libnl-3-dev and libnl-route-3-dev
+# depends on libsensors-dev
