@@ -36,7 +36,7 @@ build:
     - sonicde/sonic-frameworks-io
     - sonicde/sonic-frameworks-runner
     - sonicde/sonic-frameworks-windowsystem
-    - sonicde/sonic-globalacceld
+    - sonicde/sonic-keybind-daemon
     - sonicde/sonic-interface-libraries
     - sonicde/sonic-mobile-interface
     - sonicde/sonic-network-manager
