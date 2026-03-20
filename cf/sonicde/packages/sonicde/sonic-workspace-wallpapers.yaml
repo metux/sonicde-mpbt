@@ -8,15 +8,17 @@ sources:
                 fetch:
                   - refs/heads/*:refs/remotes/origin/*
             upstream:
-                url:    ${plasma_git}/kdeplasma-addons
+                url:    ${plasma_git}/plasma-workspace-wallpapers
                 depth:  1
                 fetch:
                   - refs/heads/*:refs/remotes/upstream/*
                   - refs/tags/*:refs/tags/upstream/*
 
-ref: origin/Plasma/6.6
+ref: origin/master
 
 buildsystem: cmake
+
+depends:
 
 build-depends:
     - kde/kf6/extra-cmake-modules

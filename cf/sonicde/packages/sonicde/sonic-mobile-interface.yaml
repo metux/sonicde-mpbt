@@ -1,10 +1,18 @@
 sources:
     git:
-        url:    ${sonicde_git}/${@basename}
         ref:    ${ref}
-        depth:  1
-        fetch:
-          - refs/heads/*:refs/remotes/origin/*
+        remotes:
+            origin:
+                url:    ${sonicde_git}/${@basename}
+                depth:  1
+                fetch:
+                  - refs/heads/*:refs/remotes/origin/*
+            upstream:
+                url:    ${plasma_git}/plasma-mobile
+                depth:  1
+                fetch:
+                  - refs/heads/*:refs/remotes/upstream/*
+                  - refs/tags/*:refs/tags/upstream/*
 
 ref: origin/master
 
