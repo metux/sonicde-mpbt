@@ -17,4 +17,4 @@ depends:
     - qt6/qtbase
     - kde/kf6/kconfigwidgets
     - kde/kf6/kitemviews
-    - sonicde/sonic-frameworks-globalaccel
+    - sonicde/sonic-frameworks-keybind

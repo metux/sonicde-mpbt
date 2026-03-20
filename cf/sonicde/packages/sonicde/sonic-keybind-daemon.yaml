@@ -24,4 +24,4 @@ depends:
     - kde/kf6/kservice
     - kde/kf6/kio
     - sonicde/sonic-frameworks-windowsystem
-    - sonicde/sonic-frameworks-globalaccel
+    - sonicde/sonic-frameworks-keybind

@@ -32,7 +32,7 @@ build:
     - sonicde/sonic-desktop-interface
     - sonicde/sonic-frameworks-auth
     - sonicde/sonic-frameworks-core-addons
-    - sonicde/sonic-frameworks-globalaccel
+    - sonicde/sonic-frameworks-keybind
     - sonicde/sonic-frameworks-io
     - sonicde/sonic-frameworks-runner
     - sonicde/sonic-frameworks-windowsystem
