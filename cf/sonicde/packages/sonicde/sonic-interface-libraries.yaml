@@ -1,14 +1,18 @@
 sources:
     git:
-        url:    ${sonicde_git}/${@basename}
         ref:    ${ref}
-        depth:  1
-        fetch:
-          - refs/heads/*:refs/remotes/origin/*
-
-    git-ext:
-        upstream:
-            url: ${plasma_git}/plasma-framework
+        remotes:
+            origin:
+                url:    ${sonicde_git}/${@basename}
+                depth:  1
+                fetch:
+                  - refs/heads/*:refs/remotes/origin/*
+            upstream:
+                url:    ${plasma_git}/libplasma
+                depth:  1
+                fetch:
+                  - refs/heads/*:refs/remotes/upstream/*
+                  - refs/tags/*:refs/tags/upstream/*
 
 ref: origin/master
 
