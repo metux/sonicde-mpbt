@@ -14,7 +14,7 @@ sources:
                   - refs/heads/*:refs/remotes/upstream/*
                   - refs/tags/*:refs/tags/upstream/*
 
-ref: origin/Plasma/6.6
+ref: origin/master
 
 buildsystem: cmake
 
