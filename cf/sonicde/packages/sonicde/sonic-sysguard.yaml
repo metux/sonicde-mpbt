@@ -3,8 +3,14 @@ sources:
     git:
         url:    ${sonicde_git}/${@basename}
         ref:    ${ref}
-        fetch:
-          - refs/heads/*:refs/remotes/origin/*
+        remotes:
+            origin:
+                fetch:
+                  - refs/heads/*:refs/remotes/origin/*
+                  - refs/tags/*:refs/tags/origin/*
+        config:
+            advice.detachedHead:    "false"
+            remote.origin.tagOpt:   --no-tags
 
 ref: origin/master
 

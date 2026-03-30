@@ -7,6 +7,7 @@ sources:
                 depth:  ${sonic_depth}
                 fetch:
                   - refs/heads/*:refs/remotes/origin/*
+                  - refs/tags/*:refs/tags/origin/*
             upstream:
                 url:    ${kf6_git}/krunner
                 depth:  ${upstream_depth}
@@ -19,6 +20,8 @@ sources:
             autopick.master:      ${ref}
             autopick.tracker:     origin/tracking/master
             advice.detachedHead:  "false"
+            remote.origin.tagOpt:   --no-tags
+            remote.upstream.tagOpt: --no-tags
 
 ref: origin/master
 

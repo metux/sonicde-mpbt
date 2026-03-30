@@ -7,12 +7,15 @@ sources:
                 depth:  ${sonic_depth}
                 fetch:
                   - refs/heads/*:refs/remotes/origin/*
+                  - refs/tags/*:refs/tags/origin/*
             upstream:
                 url:    https://github.com/Ziednaga/AndromiX-SDDM-Theme
                 depth:  ${upstream_depth}
                 fetch:
                   - refs/heads/*:refs/remotes/upstream/*
                   - refs/tags/*:refs/tags/upstream/*
+        config:
+            remote.origin.tagOpt:   --no-tags
 
 ref: origin/main
 
