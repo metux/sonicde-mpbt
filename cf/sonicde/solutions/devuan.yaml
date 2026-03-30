@@ -50,6 +50,10 @@ build:
     - sonicde/sonic-win
     - sonicde/sonic-workspace
     - sonicde/sonic-workspace-addons
+    - sonicde/sonic-frameworks-quick-ui
+    - sonicde/sonic-frameworks-io-extras
+    - sonicde/sonic-decoration
+    - sonicde/sonic-activities
 
 # very old ... still Qt5
 #    - sonicde/sonic-sysguard
