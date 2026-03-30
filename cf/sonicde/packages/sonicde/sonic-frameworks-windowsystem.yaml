@@ -29,6 +29,3 @@ buildsystem: cmake
 
 build-depends:
     - kde/kf6/extra-cmake-modules
-
-cmake-extra-args:
-    - -DKWINDOWSYSTEM_WAYLAND=OFF
