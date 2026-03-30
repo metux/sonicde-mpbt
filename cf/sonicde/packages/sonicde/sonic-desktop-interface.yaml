@@ -7,6 +7,7 @@ sources:
                 depth:  ${sonic_depth}
                 fetch:
                   - refs/heads/*:refs/remotes/origin/*
+                  - refs/tags/*:refs/tags/origin/*
             upstream:
                 url:    ${plasma_git}/plasma-desktop
                 depth:  ${upstream_depth}
@@ -19,6 +20,8 @@ sources:
             autopick.master:      ${ref}
             autopick.tracker:     origin/tracking/plasma-6.6
             advice.detachedHead:  "false"
+            remote.origin.tagOpt:   --no-tags
+            remote.upstream.tagOpt: --no-tags
 
 ref: origin/master
 
