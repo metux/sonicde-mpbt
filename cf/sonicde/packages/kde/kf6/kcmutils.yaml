@@ -18,4 +18,4 @@ depends:
     - kde/kf6/kconfigwidgets
     - kde/kf6/kio
     - kde/kf6/kxmlgui
-    - kde/kf6/kirigami
+    - sonicde/sonic-frameworks-quick-ui
