@@ -59,7 +59,6 @@ update_tracker() {
 
 # check whether remote temp branch already exists
 check_work_waiting() {
-    git remote prune origin
     if git show-branch remotes/origin/$TEMP_BRANCH 2>/dev/null >/dev/null ; then
         msg "=== remote $TEMP_BRANCH still exists. skipping for now"
         exit 0
