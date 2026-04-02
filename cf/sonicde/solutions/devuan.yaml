@@ -33,6 +33,7 @@ install-prefix: ${@PROJECT::@homedir}/SONICDE
 # what to build (can use packages or provides here)
 # just listing all sonic repos alphabetically here
 build:
+    - sonicde/sonic-login-manager
     - sonicde/sonic-l10n-templates
     - sonicde/sonic-sysguard-library
     - sonicde/sonic-screen-library
