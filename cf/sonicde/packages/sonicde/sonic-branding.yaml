@@ -1,7 +1,7 @@
 sources:
     git:
         url:    ${sonicde_git}/${@basename}.git
-        ref:    ${ref}
+        ref:    origin/${master_branch}
         depth:  ${sonic_depth}
         remotes:
             origin:
@@ -11,8 +11,9 @@ sources:
         config:
             advice.detachedHead:    "false"
             remote.origin.tagOpt:   --no-tags
+        local-branch: ${master_branch}
 
-ref: origin/main
+master_branch: master
 
 buildsystem: cmake
 

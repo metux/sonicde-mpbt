@@ -1,7 +1,7 @@
 provides: kde/kwin-dbus-interface
 sources:
     git:
-        ref:    ${ref}
+        ref:    origin/${master_branch}
         remotes:
             origin:
                 url:    ${sonicde_git}/${@basename}.git
@@ -23,8 +23,9 @@ sources:
             advice.detachedHead:    "false"
             remote.origin.tagOpt:   --no-tags
             remote.upstream.tagOpt: --no-tags
+        local-branch: ${master_branch}
 
-ref: origin/master
+master_branch: master
 
 buildsystem: cmake
 
