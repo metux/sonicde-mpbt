@@ -24,7 +24,7 @@ sources:
             remote.upstream.tagOpt: --no-tags
         local-branch: ${master_branch}
 
-master-branch: master
+master_branch: master
 
 buildsystem: cmake
 
