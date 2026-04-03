@@ -30,6 +30,7 @@ buildsystem: cmake
 
 build-depends:
     - kde/kf6/extra-cmake-modules
+    - sonicde/sonic-screen-library
 
 depends:
     - qt6/qtbase
