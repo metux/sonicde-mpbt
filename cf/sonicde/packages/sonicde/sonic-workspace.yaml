@@ -38,11 +38,13 @@ depends:
     - sonicde/sonic-screen
     - sonicde/sonic-interface-libraries
     - sonicde/sonic-screenlocker
+    - sonicde/sonic-frameworks-runner
     - kde/kf6/kded
     - kde/kf6/kparts
     - kde/kf6/ktexteditor
     - kde/kf6/ktextwidgets
     - kde/kf6/kwallet
+    - kde/plasma/plasma-activities-stats
 
 build-depends:
     - kde/kf6/extra-cmake-modules
