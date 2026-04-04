@@ -5,9 +5,7 @@ sources:
         depth:  ${sonic_depth}
         remotes:
             origin:
-                fetch:
-                  - refs/heads/*:refs/remotes/origin/*
-                  - refs/tags/*:refs/tags/origin/*
+                fetch:  ${@SOLUTION::fetch::origin}
         config:
             advice.detachedHead:    "false"
             remote.origin.tagOpt:   --no-tags

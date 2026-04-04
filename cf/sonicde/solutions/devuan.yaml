@@ -91,3 +91,11 @@ package-defaults:
     ossqm_git:      ${ossqm_git}
     sonic_depth:    ${sonic_depth}
     upstream_depth: ${upstream_depth}
+
+fetch:
+    origin:
+        - refs/heads/*:refs/remotes/origin/*
+        - refs/tags/*:refs/tags/origin/*
+    upstream:
+        - refs/heads/*:refs/remotes/upstream/*
+        - refs/tags/*:refs/tags/upstream/*
