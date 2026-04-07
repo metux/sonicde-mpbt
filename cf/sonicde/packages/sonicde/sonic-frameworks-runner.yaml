@@ -13,7 +13,7 @@ sources:
         config:
             autopick.enabled:       "true"
             autopick.upstream:      upstream/master
-            autopick.master:        ${ref}
+            autopick.master:        origin/${master_branch}
             autopick.tracker:       origin/tracking/master
             advice.detachedHead:    "false"
             remote.origin.tagOpt:   --no-tags

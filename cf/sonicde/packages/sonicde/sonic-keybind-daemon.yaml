@@ -15,7 +15,7 @@ sources:
         config:
             autopick.enabled:       "true"
             autopick.upstream:      upstream/Plasma/6.6
-            autopick.master:        ${ref}
+            autopick.master:        origin/${master_branch}
             autopick.tracker:       origin/tracking/plasma-6.6
             advice.detachedHead:    "false"
             remote.origin.tagOpt:   --no-tags
