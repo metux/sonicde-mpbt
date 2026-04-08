@@ -1,15 +1,19 @@
 #!/bin/bash
 
 REPOS="
+    silver-sddm
     sonic-audio-applet-pulse
     sonic-desktop-interface
     sonic-frameworks-auth
+    sonic-frameworks-doctools
+    sonic-login-manager
     sonic-screen
     sonic-frameworks-io
     sonic-keybind-daemon
     sonic-screenlocker
     sonic-workspace
     sonic-workspace-addons
+    sonic-workspace-wallpapers
     sonic-frameworks-keybind
     sonic-mobile-interface
     sonic-sysguard-library
