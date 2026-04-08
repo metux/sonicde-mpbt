@@ -18,3 +18,4 @@ depends:
     - qt6/qtbase
     - sonicde/sonic-frameworks-doctools
     - kde/kf6/karchive
+    - kde/kf6/ki18n
