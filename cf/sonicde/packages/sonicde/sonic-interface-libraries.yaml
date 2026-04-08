@@ -30,7 +30,7 @@ build-depends:
 depends:
     - qt6/qtbase
     - sonicde/sonic-frameworks-windowsystem
+    - sonicde/sonic-activities
     - kde/kf6/kconfig
     - kde/kf6/breeze-icons
     - kde/kf6/kitemmodels
-    - kde/plasma/plasma-activities
