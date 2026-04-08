@@ -12,7 +12,7 @@ ossqm_git:          git@github.com:oss-qm
 kde_git:            https://invent.kde.org/
 
 kf6_git:            https://invent.kde.org/frameworks/
-kf6_version:        v6.24.0
+kf6_version:        v6.25.0-rc1
 
 kdelibs_git:        https://invent.kde.org/libraries/
 
@@ -21,7 +21,7 @@ kdenet_git:         https://invent.kde.org/network/
 qt6_version:        v6.10.2
 qt6_git:            git://code.qt.io/qt
 
-plasma_version:     v6.6.3
+plasma_version:     v6.6.4
 plasma_git:         https://invent.kde.org/plasma/
 
 # clone depth of our and upstream packages (those we forked)
