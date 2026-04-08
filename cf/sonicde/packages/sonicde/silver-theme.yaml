@@ -29,4 +29,4 @@ depends:
     - kde/kf6/kiconthemes
     - kde/kf6/kcolorscheme
     - kde/kf6/kguiaddons
-    - kde/plasma/kdecoration
+    - sonicde/sonic-decoration
