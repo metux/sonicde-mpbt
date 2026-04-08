@@ -26,6 +26,8 @@ buildsystem: cmake
 
 build-depends:
     - kde/kf6/extra-cmake-modules
+    - kde/kf6/kconfig
+    - sonicde/sonic-interface-libraries
     - sonicde/sonic-screen-library
 
 depends:
