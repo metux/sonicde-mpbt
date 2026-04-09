@@ -6,18 +6,18 @@ sources:
                 url:    ${sonicde_git}/${@basename}.git
                 depth:  ${sonic_depth}
                 fetch:  ${@SOLUTION::fetch::origin}
+                tagopt: --no-tags
             upstream:
                 url:    ${plasma_git}/plasma-activities.git
                 depth:  ${upstream_depth}
                 fetch:  ${@SOLUTION::fetch::upstream}
+                tagopt: --no-tags
         config:
             autopick.enabled:       "true"
             autopick.upstream:      upstream/Plasma/6.6
             autopick.master:        origin/${master_branch}
             autopick.tracker:       origin/tracking/plasma-6.6
             advice.detachedHead:    "false"
-            remote.origin.tagOpt:   --no-tags
-            remote.upstream.tagOpt: --no-tags
         local-branch: ${master_branch}
 
 master_branch: master
